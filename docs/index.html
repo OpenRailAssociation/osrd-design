@@ -1,1 +1,207 @@
-coucou
+<html>
+<!--
+___________   _______________________________________^__
+ ___   ___ |||  ___   ___   ___    ___ ___  |   __  ,----\
+|   | |   |||| |   | |   | |   |  |   |   | |  |  | |_____\
+|___| |___|||| |___| |___| |___|  | O | O | |  |  |        \
+           |||                    |___|___| |  |__|         )
+___________|||______________________________|______________/
+           |||                                        /--------
+-----------'''---------------------------------------'
+
+color names: https://developer.mozilla.org/en-US/docs/Web/CSS/named-color
+
+-->
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif:400,600,i">
+<style>
+/*body {margin: 0 auto; padding: 0; background: url("../img/photos/happy_train.jpg") no-repeat center;}
+#helloworld { font-family: sans-serif; font-size: 10em; font-weight: 800; text-align: center; color: #fff; margin: 2em auto; text-shadow: 0 10px 25px rgba(143,96,83,0.25);}*/
+body { font-family: 'IBM Plex Serif', serif; margin: 0 auto; padding: 3em; color: #333; background: #fafafa; font-size: 18px;}
+a:link, a:visited {display: inline-block; color: royalblue; text-decoration: none; transition: all 250ms ease-out;}
+a::after { content: ''; width: 0px; height: 1px; display: block; background: navy; opacity: 0; transition: 200ms ease-out;}
+a:hover {color: navy;}
+a:hover::after { width: 100%; opacity: 0.6;}
+a:active {color: dodgerblue; text-decoration: none;}
+h1 {font-size: 4em; font-weight: bold; color: #000; border-bottom: 8px solid #F02020; padding: 0.75em 0 0.5em;}
+h2 {font-size: 1.5em; margin: 0 0 1.5em 0;}
+h3 {font-size: 1.125em; margin: 0 0 1.5em 0;}
+h4 {text-transform: uppercase; font-size: 0.875em; letter-spacing: 0.05em;}
+#intro {font-size: 1.5em; max-width: 30em; margin-bottom: 2em}
+nav {padding: 0 2em 2em;}
+section {border-top: 4px solid #333; margin-top: 6em; margin-bottom: 5em; padding-top: 6em}
+div {margin: 3em 0;}
+article {max-width: 40em;}
+article::after { content: ''; width: 50em; height: 1px; display: block; background: #ddd; margin-top: 1.5em;}
+article time {color: #999; font-size: 0.75em; display: inline-block; width: 10em; margin-bottom: 0.5em; padding-top: 0.2em; float: left;}
+article .text {margin: 0; width: 30em; display: inline-block;}
+article .images figure {font-size: 0.75em; margin: 2em 0; padding: 1em; width: 30em; margin-left: 10em; display: inline-block; background-color: #f0f0f0; border: 1px solid #e0e0e0; border-radius: 0.3em; box-shadow: 0 6px 20px rgba(0,0,0,0.05), inset 0 1px 0 #fff;}
+article .images img {width: 30em; margin :0; padding: 0;}
+article figure {margin: 0;}
+article figcaption {font-style: italic; color: #888; margin-top: 0.5em;}
+article figcaption a:link, article figcaption a:visited {color: #bbb; padding-left: 0.25em;}
+article figcaption a:hover {color: navy;}
+p {margin-top: 0;}
+ul {padding-inline-start: 1em; list-style-type: circle;}
+
+</style>
+<title>OSRD Interface Design Documentation</title>
+</head>
+<body>
+<!--<p id="helloworld">COUCOU</p>-->
+
+<header>
+<h1>OSRD design process</h1>
+<p id="intro">The aim of this document is to explain the rationale leading to the OSRD interface as it is. The Design System documentation is <a href="https://osrd.fr/design-system">here</a>.</p>
+<nav>
+	<h4>Table of contents</h4>
+	<ul class="index_group">
+		<li><a href="#method">Method</a></li>
+		<li><a href="#aspirations">Aspirations</a></li>
+		<li><a href="#constraints">Constraints</a></li>
+		<li><a href="#sources">Sources</a></li>
+	</ul>
+	<ul class="index_group">
+		<li><a href="#rhythm">Rhythm</a></li>
+		<li><a href="#colours">Colours</a></li>
+		<li><a href="#fonts">Typography</a></li>
+		<li><a href="#icons">Icons</a></li>
+	</ul>
+	<ul class="index_group">
+		<li><a href="#navigation">Navigation</a></li>
+		<li><a href="#authentification">Authentification</a></li>
+		<li><a href="#messaging">Messaging</a></li>
+		<li><a href="#screen_structure">Screen structure</a></li>
+	</ul>
+	<ul class="index_group">
+		<li><a href="#text_input">Text input</a></li>
+		<li><a href="#select">Select</a></li>
+		<li><a href="#checkbox">Check box</a></li>
+		<li><a href="#radio">Radio</a></li>
+	</ul>
+</nav>
+</header>
+
+<section>
+	<div>
+		<h2 id="method">Method</h2>
+		<article>
+			<time datetime="2023-10-03T">03.10.2023</time>
+			<div class="text">
+				<p>Experience building other design systems, learned best practices, reviewing and comparing prominent, exhaustive design systems, qualitative testing with users.</p>
+			</div>
+		</article>
+	</div>
+
+	<div>
+		<h2 id="aspirations">Aspirations</h2>
+		<article>
+			<time datetime="2023-10-03T">03.10.2023</time>
+			<div class="text">
+				<p>Reflecting the "study tool" nature of OSRD. It belongs in a library, an engineering office or in a workshop, rather than in a shopping mall or a candy store. Adding more depth and presence to interactive elements than the flat design trend.</p>
+			</div>
+			<div class="images">
+				<figure>
+					<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Statsbiblioteket_læsesalen-2.jpg/800px-Statsbiblioteket_læsesalen-2.jpg" />
+					<figcaption>A reading room in the State and University Library (Statsbiblioteket) in Aarhus, Denmark <a href="https://commons.wikimedia.org/wiki/File:Statsbiblioteket_læsesalen-2.jpg">→</a></figcaption>
+				</figure>
+				<figure>
+					<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/CONTRACT_ENGINEERING_DESIGN_OFFICE_-_NARA_-_17422566.jpg/979px-CONTRACT_ENGINEERING_DESIGN_OFFICE_-_NARA_-_17422566.jpg" />
+					<figcaption>Contract engineering design office <a href="https://commons.wikimedia.org/wiki/File:CONTRACT_ENGINEERING_DESIGN_OFFICE_-_NARA_-_17422566.jpg">→</a></figcaption>
+				</figure>
+				<figure>
+					<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/South_Australian_Railways_drawing_–_700_class_diesel-electric_locomotive.png/640px-South_Australian_Railways_drawing_–_700_class_diesel-electric_locomotive.png" />
+					<figcaption>South Australian Railways drawing – 700 class diesel-electric locomotive <a href="https://commons.wikimedia.org/wiki/File:South_Australian_Railways_drawing_–_700_class_diesel-electric_locomotive.png">→</a></figcaption>
+				</figure>
+				
+				
+			</div>
+		</article>
+	</div>
+	
+	<div>
+		<h2 id="constraints">Constraints</h2>
+		<article>
+			<time datetime="2023-10-03T">03.10.2023</time>
+			<div class="text">
+				<p>Making OSRD accessible: high contrast in colours and sufficiently large active zones for interactive elements will have to be respected as much as possible, while maintaining efficiency on the target screen size.</p>
+				<p>Discoverability: OSRD is an industrial tool, not a public facing website where users have to figure out everything on their own. The axiom <em>&#8220;UX is like a joke; if you need to explain it, it isn&#8217;t that good&#8221;</em> doesn&#8217;t apply in such context. Still, we must do everything we can to figure out smart and obvious ways for users to accomplish their tasks.</p>
+				<p>Making OSRD last: timeless aesthetics, no cool kids gimmicks.</p>
+				<p>OSRD isn&#8217;t a brand: no guidelines for colours, fonts and tone to start with. Which can be paralysing, but it gives us more wiggle room to design a tool we&#8217;re going to love.</p>
+			</div>
+		</article>
+	</div>
+	
+	<div>
+		<h2 id="sources">Sources</h2>
+		<article>
+			<time datetime="2023-10-03T">03.10.2023</time>
+			<div class="text">
+				<ul>
+					<li><a href="https://design-system.service.gov.uk/" title="">Gov dot UK Design System</a></li>
+					<li><a href="https://designsystem.digital.gov/" title="">U.S. Web Design System</a></li>
+					<li><a href= "https://carbondesignsystem.com/" title="">Carbon Design System (IBM)</a></li>
+					<li><a href= "https://design.herokai.com/purple3/docs/" title="">Heroku Design System</a></li>
+					<li><a href= "https://primer.style/" title="">Primer Design System (GitHub)</a></li>
+					<li><a href= "https://stripe.com/docs/stripe-apps/style" title="">Stripe Design System</a></li>
+				</ul>
+			</div>
+		</article>
+	</div>
+	
+</section>
+
+<section>
+	<div>
+		<h2 id="rhythm">Rhythm</h2>
+		<article>
+			<time datetime="2023-10-03T">03.10.2023</time>
+			<div class="text">
+				<h3>The 8 pixels grid</h3>
+				<p>See IBM's explaination.</p>
+			</div>
+		</article>
+	</div>
+
+	<div>
+		<h2 id="colours">Colours</h2>
+		<article>
+			<time datetime="2023-10-03T">03.10.2023</time>
+			<div class="text">
+				<h3>Role in the interface</h3>
+				<p>Colours provide semantic clues to users, so consistency is key. They're informing about the context they're in, about what they can—can't—should—shouldn't do, helping organise complex sets of informations.</p>
+				<p>In tools like OSRD, text is everywhere, so colours affect everything. Ambience, text, communicating state of interactive elements.</p>
+				<h3>Common issues</h3>
+				<p>Colours are culturally subjective.</p>
+				<p>Colours are not physiologically perceived the same way by everyone.</p>
+				<p>Contrasts are not equal from one tint to another at the same saturation and luminance values. USWDS' magic number.</p>
+			</div>
+		</article>
+	</div>
+
+	<div>
+		<h2 id="fonts">Fonts</h2>
+		<article>
+			<time datetime="2023-10-03T">03.10.2023</time>
+			<div class="text">
+				<p>Font family</p>
+			</div>
+		</article>
+	</div>
+
+	<div>
+		<h2 id="icons">Icons</h2>
+		<article>
+			<time datetime="2023-10-03T">03.10.2023</time>
+			<div class="text">
+				<p>Icon set</p>
+			</div>
+		</article>
+	</div>
+	
+</section>
+<footer>
+</footer>
+</body>
+</html>
