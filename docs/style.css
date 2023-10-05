@@ -15,6 +15,7 @@ color names: https://developer.mozilla.org/en-US/docs/Web/CSS/named-color
 body {
 	font-family: 'IBM Plex Serif', serif;
 	font-size: 18px;
+	line-height: 1.3333;
 	margin: 0 auto; padding: 3em;
 	color: #333;
 	background: #fafafa;
@@ -60,29 +61,43 @@ h1 {
 	}
 
 h2 {
-	font-size: 1.5em;
-	margin: 0 0 1.5em 0;
+	font-size: 1.3333em;
+	margin: 0 0 2em 0;
 	}
 
 h3 {
-	font-size: 1.125em;
+	font-size: 1.1666em;
+	line-height: 1em;
 	margin: 0 0 1.5em 0;
 	}
 	
 h4 {
-	font-size: 0.875em;
+	font-size: 0.7777em;
 	text-transform: uppercase;
 	letter-spacing: 0.05em;
 	}
 
+.small {
+	font-size: .7777em;
+	}
+
+.info {
+	color: dodgerblue;
+	}
+
 #intro {
-	font-size: 1.5em;
-	max-width: 30em;
-	margin-bottom: 2em;
+	font-size: 1.333em;
+	max-width: 34em;
+	margin: 3em 0 1.5em;
 	}
 	
 nav {
+	margin: 6em 0 0;
 	padding: 0 2em 2em;
+	}
+
+nav ul {
+	margin: 1.5em 0 0 0;
 	}
 
 section {
@@ -97,32 +112,40 @@ div {
 	}
 
 article {
-	max-width: 40em;
+	max-width: 44em;
 	}
 
-article::after {
+.topic::after {
 	content: '';
 	width: 50em;
 	height: 1px;
 	display: block;
 	background: #ddd;
-	margin-top: 1.5em;
+	margin-top: 4em;
 	}
+
+.topic:last-of-type::after {
+	background: transparent;
+}
 	
 article time {
-	font-size: 0.75em;
+	font-size: 0.7777em;
 	display: inline-block;
 	float: left;
 	width: 10em;
 	margin-bottom: 0.5em;
-	padding-top: 0.2em;
+	padding-top: 0.3em;
 	color: #999;
 	}
 
 article .text {
 	display: inline-block;
 	margin: 0;
-	width: 30em;
+	width: 34em;
+	}
+
+article .text p + h3 {
+	margin-top: 3.4284em;
 	}
 
 article .images figure {
@@ -163,7 +186,7 @@ article figcaption a:hover {
 	}
 
 p {
-	margin-top: 0;
+	margin: 0 0 1.3888em;
 	}
 
 ul {
