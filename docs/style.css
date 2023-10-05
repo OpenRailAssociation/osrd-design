@@ -16,7 +16,7 @@ body {
 	font-family: 'IBM Plex Serif', serif;
 	font-size: 18px;
 	line-height: 1.3333;
-	margin: 0 auto; padding: 3em;
+	margin: 0 auto;
 	color: #333;
 	background: #fafafa;
 	}
@@ -85,6 +85,10 @@ h4 {
 	color: dodgerblue;
 	}
 
+header {
+	 padding: 3em;
+	}
+
 #intro {
 	font-size: 1.333em;
 	max-width: 34em;
@@ -98,6 +102,10 @@ nav {
 
 nav ul {
 	margin: 1.5em 0 0 0;
+	}
+
+main {
+	 padding: 3em;
 	}
 
 section {
@@ -192,4 +200,15 @@ p {
 ul {
 	padding-inline-start: 1em;
 	list-style-type: circle;
+	}
+
+footer {
+	padding: 3em 3em 3em 10.7777em;
+	height: 1em;
+	background: gainsboro;
+	}
+footer p {
+	font-size: .7777em;
+	font-style: italic;
+	color: #aaa;
 	}

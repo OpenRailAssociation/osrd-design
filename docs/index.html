@@ -24,7 +24,7 @@ ___________|||______________________________|______________/
 	<header>
 		<h1>OSRD design process</h1>
 		<p id="intro">The aim of this document is to explain the rationale leading to the <a href="https://osrd.fr" title="Find out more about OSRD" traget="_blank">OSRD</a> interface. From general considerations to Design System elements and specific OSRD features, it will list the choices made to build the OSRD graphical interface.</p>
-		<p class="small">The OSRD Design System documentation is <a href="https://osrd.fr/design-system">here</a>.</p>
+		<!--<p class="small">The OSRD Design System documentation is <a href="https://osrd.fr/design-system">here</a>.</p>-->
 		<nav>
 			<h4>Table of contents</h4>
 			<ul class="index_group">
@@ -33,13 +33,14 @@ ___________|||______________________________|______________/
 				<li><a href="#constraints">Constraints</a></li>
 				<li><a href="#sources">Sources</a></li>
 			</ul>
+			<!--
 			<ul class="index_group">
 				<li><a href="#rhythm">Rhythm</a></li>
 				<li><a href="#colours">Colours</a></li>
 				<li><a href="#fonts">Typography</a></li>
 				<li><a href="#icons">Icons</a></li>
 			</ul>
-			<!--
+			
 			<ul class="index_group">
 				<li><a href="#navigation">Navigation</a></li>
 				<li><a href="#authentification">Authentification</a></li>
@@ -55,137 +56,139 @@ ___________|||______________________________|______________/
 			-->
 		</nav>
 	</header>
+	<main>
+		<section>
+			<div class="topic">
+				<h2 id="method">Method</h2>
+				<article>
+					<time datetime="2023-10-05T">05.10.2023</time>
+					<div class="text">
+						<p>The design process doesn&#8217;t rely on any specific design method. It&#8217;s based on the experience of designers working on the project. Here is what we&#8217;ll do: listening to stakeholders and users, taking notes, clearly understanding the context (project, users) and the tasks to be handled by the app, using interaction and information display best practices, reviewing and comparing exhaustive design systems, and running qualitative tests with users.</p>
+					</div>
+				</article>
+			</div>
 
-	<section>
-		<div class="topic">
-			<h2 id="method">Method</h2>
-			<article>
-				<time datetime="2023-10-05T">05.10.2023</time>
-				<div class="text">
-					<p>The design process doesn&#8217;t rely on any specific design method. It&#8217;s based on the experience of designers working on the project. Here is what we&#8217;ll do: listening to stakeholders and users, taking notes, clearly understanding the context (project, users) and the tasks to be handled by the app, using interaction and information display best practices, reviewing and comparing exhaustive design systems, and running qualitative tests with users.</p>
-				</div>
-			</article>
-		</div>
-
-		<div class="topic">
-			<h2 id="aspirations">Aspirations</h2>
-			<article>
-				<time datetime="2023-10-05T">05.10.2023</time>
-				<div class="text">
-					<p>OSRD should reflect its prospective and industrial nature. It belongs in a library, an engineering office or a workshop, rather than in a shopping mall or a candy store. Aesthetics and behaviour will be used to convey this.</p>
-					<p>The flat design trend allows for very elegant and minimal interfaces. But it also makes it harder for interactive elements to appear so. In this project, we&#8217;ll be adding a little more depth and presence when visually rendering buttons, input fields and such, so they can better be distinguished from content at a glance.</p>
-				</div>
-				<div class="images">
-					<figure>
-						<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Statsbiblioteket_læsesalen-2.jpg/800px-Statsbiblioteket_læsesalen-2.jpg" />
-						<figcaption>A reading room in the State and University Library (Statsbiblioteket) in Aarhus, Denmark <a href="https://commons.wikimedia.org/wiki/File:Statsbiblioteket_læsesalen-2.jpg">→</a></figcaption>
-					</figure>
-					<figure>
-						<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/CONTRACT_ENGINEERING_DESIGN_OFFICE_-_NARA_-_17422566.jpg/979px-CONTRACT_ENGINEERING_DESIGN_OFFICE_-_NARA_-_17422566.jpg" />
-						<figcaption>Contract engineering design office <a href="https://commons.wikimedia.org/wiki/File:CONTRACT_ENGINEERING_DESIGN_OFFICE_-_NARA_-_17422566.jpg">→</a></figcaption>
-					</figure>
-					<figure>
-						<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/South_Australian_Railways_drawing_–_700_class_diesel-electric_locomotive.png/640px-South_Australian_Railways_drawing_–_700_class_diesel-electric_locomotive.png" />
-						<figcaption>South Australian Railways drawing – 700 class diesel-electric locomotive <a href="https://commons.wikimedia.org/wiki/File:South_Australian_Railways_drawing_–_700_class_diesel-electric_locomotive.png">→</a></figcaption>
-					</figure>
+			<div class="topic">
+				<h2 id="aspirations">Aspirations</h2>
+				<article>
+					<time datetime="2023-10-05T">05.10.2023</time>
+					<div class="text">
+						<p>OSRD should reflect its prospective and industrial nature. It belongs in a library, an engineering office or a workshop, rather than in a shopping mall or a candy store. Aesthetics and behaviour will be used to convey this.</p>
+						<p>The flat design trend allows for very elegant and minimal interfaces. But it also makes it harder for interactive elements to appear so. In this project, we&#8217;ll be adding a little more depth and presence when visually rendering buttons, input fields and such, so they can better be distinguished from content at a glance.</p>
+					</div>
+					<div class="images">
+						<figure>
+							<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Statsbiblioteket_læsesalen-2.jpg/800px-Statsbiblioteket_læsesalen-2.jpg" />
+							<figcaption>A reading room in the State and University Library (Statsbiblioteket) in Aarhus, Denmark <a href="https://commons.wikimedia.org/wiki/File:Statsbiblioteket_læsesalen-2.jpg">→</a></figcaption>
+						</figure>
+						<figure>
+							<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/CONTRACT_ENGINEERING_DESIGN_OFFICE_-_NARA_-_17422566.jpg/979px-CONTRACT_ENGINEERING_DESIGN_OFFICE_-_NARA_-_17422566.jpg" />
+							<figcaption>Contract engineering design office <a href="https://commons.wikimedia.org/wiki/File:CONTRACT_ENGINEERING_DESIGN_OFFICE_-_NARA_-_17422566.jpg">→</a></figcaption>
+						</figure>
+						<figure>
+							<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/South_Australian_Railways_drawing_–_700_class_diesel-electric_locomotive.png/640px-South_Australian_Railways_drawing_–_700_class_diesel-electric_locomotive.png" />
+							<figcaption>South Australian Railways drawing – 700 class diesel-electric locomotive <a href="https://commons.wikimedia.org/wiki/File:South_Australian_Railways_drawing_–_700_class_diesel-electric_locomotive.png">→</a></figcaption>
+						</figure>
 				
 				
-				</div>
-			</article>
-		</div>
+					</div>
+				</article>
+			</div>
 	
-		<div class="topic">
-			<h2 id="constraints">Constraints</h2>
-			<article>
-				<time datetime="2023-10-05T">05.10.2023</time>
-				<div class="text">
-					<h4>Accessibility</h4>
-					<p>OSRD will be a complex tool by nature, with a large amount of informations to display at once to make it effective to those who will work with it. Sufficient contrast in colours and comfortable active zones for interactive elements will have to be used as much as possible, while ensuring rich semantics are visually expressed and that sufficient efficiency is reached by users on the target screen size.</p>
-					<h4>Discoverability</h4>
-					<p>OSRD is an industrial tool, not a public facing website where users have to figure out every task at hand on their own. The axiom <em>&#8220;UX is like a joke; if you need to explain it, it isn&#8217;t that good&#8221;</em> doesn&#8217;t apply in such context. Still, we must do everything we can to figure out smart and obvious ways for users to accomplish their tasks.</p>
-					<h4>Longevity</h4>
-					<p>Complex interfaces take a fair amount of time to be designed, and a redesign are costly. OSRD should remain usable and pleasant to use in 2033 and beyond. We&#8217;ll rely on as much timeless aesthetics as possible, and steer away from any 2023 cool graphic gimmicks.</p>
-					<h4>Independence</h4>
-					<p>As an Open Source project financed by the European Union, OSRD doesn&#8217;t have pre-existing brand guidelines to work from when orienting its visual langage. It should not be associated with any particular European rail operation company graphic identity, and remain on a neutral ground. Starting out without any guidelines can be paralysing, but it gives us wiggle room to design a tool we&#8217;re going to love to work on.</p>
-				</div>
-			</article>
-		</div>
+			<div class="topic">
+				<h2 id="constraints">Constraints</h2>
+				<article>
+					<time datetime="2023-10-05T">05.10.2023</time>
+					<div class="text">
+						<h3>Accessibility</h3>
+						<p>OSRD will be a complex tool by nature, with a large amount of informations to display at once to make it effective to those who will work with it. Sufficient contrast in colours and comfortable active zones for interactive elements will have to be used as much as possible, while ensuring rich semantics are visually expressed and that sufficient efficiency is reached by users on the target screen size.</p>
+						<h3>Discoverability</h3>
+						<p>OSRD is an industrial tool, not a public facing website where users have to figure out every task at hand on their own. The axiom <em>&#8220;UX is like a joke; if you need to explain it, it isn&#8217;t that good&#8221;</em> doesn&#8217;t apply in such context. Still, we must do everything we can to figure out smart and obvious ways for users to accomplish their tasks.</p>
+						<h3>Longevity</h3>
+						<p>Complex interfaces take a fair amount of time to be designed, and a redesign are costly. OSRD should remain usable and pleasant to use in 2033 and beyond. We&#8217;ll rely on as much timeless aesthetics as possible, and steer away from any 2023 cool graphic gimmicks.</p>
+						<h3>Independence</h3>
+						<p>As an Open Source project financed by the European Union, OSRD doesn&#8217;t have pre-existing brand guidelines to work from when orienting its visual langage. It should not be associated with any particular European rail operation company graphic identity, and remain on a neutral ground. Starting out without any guidelines can be paralysing, but it gives us wiggle room to design a tool we&#8217;re going to love to work on.</p>
+					</div>
+				</article>
+			</div>
+		<!--
+			<div class="topic">
+				<h2 id="sources">Sources</h2>
+				<article>
+					<time datetime="2023-10-03T">03.10.2023</time>
+					<div class="text">
+						<ul>
+							<li><a href="https://design-system.service.gov.uk/" title="">Gov dot UK Design System</a></li>
+							<li><a href="https://designsystem.digital.gov/" title="">U.S. Web Design System</a></li>
+							<li><a href= "https://carbondesignsystem.com/" title="">Carbon Design System (IBM)</a></li>
+							<li><a href= "https://design.herokai.com/purple3/docs/" title="">Heroku Design System</a></li>
+							<li><a href= "https://primer.style/" title="">Primer Design System (GitHub)</a></li>
+							<li><a href= "https://stripe.com/docs/stripe-apps/style" title="">Stripe Design System</a></li>
+						</ul>
+					</div>
+				</article>
+			</div>
 	
-		<div class="topic">
-			<h2 id="sources">Sources</h2>
-			<article>
-				<time datetime="2023-10-03T">03.10.2023</time>
-				<div class="text">
-					<ul>
-						<li><a href="https://design-system.service.gov.uk/" title="">Gov dot UK Design System</a></li>
-						<li><a href="https://designsystem.digital.gov/" title="">U.S. Web Design System</a></li>
-						<li><a href= "https://carbondesignsystem.com/" title="">Carbon Design System (IBM)</a></li>
-						<li><a href= "https://design.herokai.com/purple3/docs/" title="">Heroku Design System</a></li>
-						<li><a href= "https://primer.style/" title="">Primer Design System (GitHub)</a></li>
-						<li><a href= "https://stripe.com/docs/stripe-apps/style" title="">Stripe Design System</a></li>
-					</ul>
-				</div>
-			</article>
-		</div>
+		</section>
+
+		<section>
+			<div class="topic">
+				<h2 id="rhythm">Rhythm</h2>
+				<article>
+					<time datetime="2023-10-03T">03.10.2023</time>
+					<div class="text">
+						<h3>The 8 pixels grid</h3>
+						<p>See IBM's explaination.</p>
+					</div>
+				</article>
+			</div>
+
+			<div class="topic">
+				<h2 id="colours">Colours</h2>
+				<article>
+					<time datetime="2023-10-03T">03.10.2023</time>
+					<div class="text">
+						<h3>Role in the interface</h3>
+						<p>Colours provide semantic clues to users, so consistency is key. They're informing about the context they're in, about what they can—can't—should—shouldn't do, helping organise complex sets of informations.</p>
+						<p>In tools like OSRD, text is everywhere, so colours affect everything. Ambience, text, communicating state of interactive elements.</p>
+						<h3>Common issues</h3>
+						<p>Colours are culturally subjective.</p>
+						<p>Colours are not physiologically perceived the same way by everyone.</p>
+						<p>Contrasts are not equal from one tint to another at the same saturation and luminance values. USWDS' magic number.</p>
+						<h3>Palettes</h3>
+						<p>Colour palettes are not just a container where to pick references, they're a tool to ensure visual harmony.
+		Design systems sometimes provide a handful of colours to work with, sometimes 10 variations for each tint. OSRD Design System will follow the latter situation, which by experience allows for more flexibility while maintaining consistency on the long term.</p>
+						<h3>OSRD specifics</h3>
+						<p>The brand-less nature of OSRD frees us from reflecting a specific set of pre-existing values. The primary colour, as an example, is usually derived from the primary brand colour.</p>
+					</div>
+				</article>
+			</div>
+
+			<div class="topic">
+				<h2 id="fonts">Fonts</h2>
+				<article>
+					<time datetime="2023-10-03T">03.10.2023</time>
+					<div class="text">
+						<p>Font family</p>
+					</div>
+				</article>
+			</div>
+
+			<div class="topic">
+				<h2 id="icons">Icons</h2>
+				<article>
+					<time datetime="2023-10-03T">03.10.2023</time>
+					<div class="text">
+						<p>Icon set</p>
+					</div>
+				</article>
+			</div>
 	
-	</section>
-
-	<section>
-		<div class="topic">
-			<h2 id="rhythm">Rhythm</h2>
-			<article>
-				<time datetime="2023-10-03T">03.10.2023</time>
-				<div class="text">
-					<h3>The 8 pixels grid</h3>
-					<p>See IBM's explaination.</p>
-				</div>
-			</article>
-		</div>
-
-		<div class="topic">
-			<h2 id="colours">Colours</h2>
-			<article>
-				<time datetime="2023-10-03T">03.10.2023</time>
-				<div class="text">
-					<h3>Role in the interface</h3>
-					<p>Colours provide semantic clues to users, so consistency is key. They're informing about the context they're in, about what they can—can't—should—shouldn't do, helping organise complex sets of informations.</p>
-					<p>In tools like OSRD, text is everywhere, so colours affect everything. Ambience, text, communicating state of interactive elements.</p>
-					<h3>Common issues</h3>
-					<p>Colours are culturally subjective.</p>
-					<p>Colours are not physiologically perceived the same way by everyone.</p>
-					<p>Contrasts are not equal from one tint to another at the same saturation and luminance values. USWDS' magic number.</p>
-					<h3>Palettes</h3>
-					<p>Colour palettes are not just a container where to pick references, they're a tool to ensure visual harmony.
-	Design systems sometimes provide a handful of colours to work with, sometimes 10 variations for each tint. OSRD Design System will follow the latter situation, which by experience allows for more flexibility while maintaining consistency on the long term.</p>
-					<h3>OSRD specifics</h3>
-					<p>The brand-less nature of OSRD frees us from reflecting a specific set of pre-existing values. The primary colour, as an example, is usually derived from the primary brand colour.</p>
-				</div>
-			</article>
-		</div>
-
-		<div class="topic">
-			<h2 id="fonts">Fonts</h2>
-			<article>
-				<time datetime="2023-10-03T">03.10.2023</time>
-				<div class="text">
-					<p>Font family</p>
-				</div>
-			</article>
-		</div>
-
-		<div class="topic">
-			<h2 id="icons">Icons</h2>
-			<article>
-				<time datetime="2023-10-03T">03.10.2023</time>
-				<div class="text">
-					<p>Icon set</p>
-				</div>
-			</article>
-		</div>
-	
-	</section>
-
+		</section>
+		-->
+	</main>
 	<footer>
+		<p>We ❤︎ trains</p>
 	</footer>
 
 </body>
