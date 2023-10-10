@@ -205,6 +205,32 @@ ul {
 	list-style-type: circle;
 	}
 
+.swatches {
+	width: 34em;
+	overflow: hidden;
+	background-color: yellow;
+	}
+
+.swatch_3_square {
+	font-size: 0.5555em;
+	margin: 0;
+	padding: 2em;
+	width: 16.4em;
+	height: 16.4em;
+	float: left;
+	color: rgba(0,0,0,0.4);
+	}
+
+.swatch_5_3by2 {
+	font-size: 0.5555em;
+	margin: 0;
+	padding: 2em;
+	width: 8.24em;
+	height: 4.16em;
+	float: left;
+	color: rgba(0,0,0,0.6);
+	}
+
 footer {
 	padding: 3em 3em 3em 10.7777em;
 	height: 1em;
