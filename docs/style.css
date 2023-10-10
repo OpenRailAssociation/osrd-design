@@ -206,27 +206,40 @@ ul {
 	}
 
 .swatches {
-	width: 34em;
+	width: 30em;
+	padding: 2em;
 	overflow: hidden;
-	background-color: yellow;
+	background-color: #fff;
+	/* background-color: yellow; */
+	box-shadow: 0 6px 20px rgba(0,0,0,0.05);
 	}
 
 .swatch_3_square {
 	font-size: 0.5555em;
 	margin: 0;
 	padding: 2em;
-	width: 16.4em;
-	height: 16.4em;
+	width: 14em;
+	height: 14em;
 	float: left;
 	color: rgba(0,0,0,0.4);
 	}
 
-.swatch_5_3by2 {
+.swatch_4_square {
 	font-size: 0.5555em;
 	margin: 0;
 	padding: 2em;
-	width: 8.24em;
-	height: 4.16em;
+	width: 9.5em;
+	height: 9.5em;
+	float: left;
+	color: rgba(0,0,0,0.6);
+	}
+
+.swatch_5_square {
+	font-size: 0.5555em;
+	margin: 0;
+	padding: 2em;
+	width: 6.8em;
+	height: 6.8em;
 	float: left;
 	color: rgba(0,0,0,0.6);
 	}
