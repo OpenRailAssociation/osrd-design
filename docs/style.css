@@ -80,7 +80,7 @@ h4 {
 	margin-bottom: 0.5714em;
 	}
 
-.small {
+small {
 	font-size: .7777em;
 	}
 
@@ -242,6 +242,18 @@ ul {
 	height: 6.8em;
 	float: left;
 	color: rgba(0,0,0,0.6);
+	}
+
+.artboard a {
+	display: inline-block;
+	margin: 0 1em 3.4285em 0;
+	padding: 1.0714em 2em 1em 3.4285em;
+	background: rgba(255,255,255,0.7) url(img/icn/artboard.svg) no-repeat 1em 0.7857em;
+	transition: all 250ms ease-out;
+	}
+
+.artboard a:hover {
+	background: rgba(255,255,255,1) url(img/icn/artboard_fill.svg) no-repeat 1em 0.7857em;
 	}
 
 footer {

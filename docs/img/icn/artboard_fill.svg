@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icn/artboard_fill</title>
+    <defs>
+        <radialGradient cx="50%" cy="-1.94289029e-14%" fx="50%" fy="-1.94289029e-14%" r="156.525924%" gradientTransform="translate(0.5, -0), scale(1, 0.8), rotate(103.5442), translate(-0.5, 0)" id="radialGradient-1">
+            <stop stop-color="#FF7900" offset="0%"></stop>
+            <stop stop-color="#267DFF" offset="100%"></stop>
+        </radialGradient>
+    </defs>
+    <g id="icn/artboard_fill" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M20,17.5 L20,18 C20,18.5522847 19.5522847,19 19,19 L17.107,19 L17.7776591,21.5026617 C17.920601,22.0361278 17.6040185,22.5844648 17.0705524,22.7274066 C16.5370863,22.8703484 15.9887493,22.5537659 15.8458075,22.0202998 L15.036,19 L8.963,19 L8.15419251,22.0202998 C8.0112507,22.5537659 7.46291374,22.8703484 6.92944764,22.7274066 C6.39598154,22.5844648 6.07939905,22.0361278 6.22234086,21.5026617 L6.892,19 L5,19 C4.44771525,19 4,18.5522847 4,18 L4,17.5 L20,17.5 Z M17,4 L7,4 L7,16 L17,16 L17,4 Z M13,1.5 C13.5522847,1.5 14,1.94771525 14,2.5 L10,2.5 C10,1.94771525 10.4477153,1.5 11,1.5 L13,1.5 Z M18,3 L18,17 L6,17 L6,3 L18,3 Z" id="Shape" fill="#000000" opacity="0.501534598"></path>
+        <rect id="Rectangle" fill="url(#radialGradient-1)" opacity="0.286597842" x="8" y="5" width="8" height="10"></rect>
+    </g>
+</svg>
