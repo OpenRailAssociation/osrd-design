@@ -84,6 +84,30 @@ small {
 	font-size: .7777em;
 	}
 
+blockquote {
+	padding: 1em 0 1em 3em;
+	font-style: italic;
+	line-height: 1.5em;
+	position: relative;
+	}
+
+blockquote p {
+	position: relative;
+	}
+
+blockquote p::before {
+	content: '“';
+	width: 40px;
+	height: 40px;
+	display: block;
+	position: absolute;
+	font-size: 4em;
+	font-style: normal;
+	top: 0.25em;
+	left: -0.75em;
+	color: lightgrey;
+	}
+
 .info {
 	color: dodgerblue;
 	}
