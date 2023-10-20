@@ -14,7 +14,7 @@ ___________|||______________________________|______________/
 <head>
 	<meta charset="utf-8">
 	<title>OSRD Interface Design Documentation</title>
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif:400,600,i">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans|IBM+Plex+Serif:400,600,i">
 	<link rel="stylesheet" href="style.css" >
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.png">
 </head>
@@ -255,7 +255,7 @@ ___________|||______________________________|______________/
 			<div class="topic">
 				<h2 id="fonts">Typography</h2>
 				<article>
-					<time datetime="2023-10-12T">12.10.2023</time>
+					<time datetime="2023-10-20T">20.10.2023</time>
 					<div class="text">
 						<h3>Role in the interface</h3>
 						<p>Just as an actor provides <a href="https://en.wikipedia.org/wiki/Adaptations_of_Sherlock_Holmes#Film">a face</a> <a href="https://en.wikipedia.org/wiki/List_of_films_and_television_series_featuring_Robin_Hood">to a</a> <a href="https://en.wikipedia.org/wiki/Batman_in_film">fictional character</a>, a type<em>face</em> provides a specific form to words composing an interface, and participates actively in the app&#8217;s mood. Just as <a href="https://en.wikipedia.org/wiki/Dave_Bautista">Dave Bautista</a> would be an offbeat choice to play <a href="https://en.wikipedia.org/wiki/Bilbo_Baggins">Bilbo Baggins</a>, choosing <a href="https://en.wikipedia.org/wiki/Impact_(typeface)">Impact</a> to lay out an old style tea label would prove to be a regretful decision.</p>
@@ -308,7 +308,35 @@ ___________|||______________________________|______________/
 							<p>Abbink says there was much debate about keeping IBM Plex strictly for in-house use, “but we realized that to have Plex as part of all IBM experiences, we needed to make it an open-source typeface. If a shoe store or coffee shop decides to use the IBM typeface in their identity system, that’s a cool story. They’re tying their identity to ours. There’s nothing to be gained by hoarding it just for our use.”</p>
 						</blockquote>
 						<small class="artboard"><a href="img/Font/Plex-font-family@2x.png" title="design document png export" target="_blank">Plex font family artboard</a></small>
-						<small class="artboard"><a href="img/Font/Plex-font-specimens@2x.png" title="design document png export" target="_blank">Plex font artefact artboard artboard</a></small>
+						<small class="artboard"><a href="img/Font/Plex-font-specimens@2x.png" title="design document png export" target="_blank">Plex font specimen artboard</a></small>
+						<h3>Typographic scale</h3>
+						<p>This is the set of text sizes that will have to be used to typeset the whole interface. It&#8217;s a tool for consistency and harmony. Font sizes will have to be either 10, 12, 14, 16, 18, 24, 32, 40, 48, 72, or 88.</p>
+						<p>These sizes were determined empirically so each of them is distinct enough from the previous or next one, ensuring they can be used together in a screen and still provide visual clues of information hierarchy. The similarity with the 8px vertical rhythm isn&#8217;t coincidental at all.</p>
+						<p style="font-family: 'IBM Plex Sans'; font-size: 10px; line-height: 40px; width: 850px;">This is 10px font size</p>
+						<p style="font-family: 'IBM Plex Sans'; font-size: 12px; line-height: 40px; width: 850px;">This is 12px font size</p>
+						<p style="font-family: 'IBM Plex Sans'; font-size: 14px; line-height: 40px; width: 850px;">This is 14px font size</p>
+						<p style="font-family: 'IBM Plex Sans'; font-size: 16px; line-height: 40px; width: 850px;">This is 16px font size</p>
+						<p style="font-family: 'IBM Plex Sans'; font-size: 18px; line-height: 40px; width: 850px;">This is 18px font size</p>
+						<p style="font-family: 'IBM Plex Sans'; font-size: 24px; line-height: 40px; width: 850px;">This is 24px font size</p>
+						<p style="font-family: 'IBM Plex Sans'; font-size: 32px; line-height: 40px; width: 850px;">This is 32px font size</p>
+						<p style="font-family: 'IBM Plex Sans'; font-size: 40px; line-height: 40px; width: 850px;">This is 40px font size</p>
+						<p style="font-family: 'IBM Plex Sans'; font-size: 48px; line-height: 40px; width: 850px;">This is 48px font size</p>
+						<p style="font-family: 'IBM Plex Sans'; font-size: 72px; line-height: 40px; width: 850px;">This is 72px font size</p>
+						<p style="font-family: 'IBM Plex Sans'; font-size: 88px; line-height: 40px; width: 850px;">This is 88px font size</p>
+						<small class="artboard"><a href="img/Font/Typographic-scale@2x.png" title="design document png export" target="_blank">Typographic scale artboard</a></small>
+						<h3>Text styles</h3>
+						<p>Where the typographic scale and the colour palette meet. Text styles are pre-determined combinations of text size, weight and colour that will make the bulk of text elements in the app.</p>
+						<p>Text sizes are divided in two groups, with some overlap: heading styles from 40 to 14, and paragraph styles from 24 to 10.</p>
+						<p>Weights are either semibold or regular. This doesn&#8217;t forbid the use of other weights occasionally when it makes sense for the context.</p>
+						<p>Colours are black and white, a range of four greys, and the 60 variant of the utility tints.</p>
+						<p>Here are some examples:</p>
+						<p style="font-family: 'IBM Plex Sans'; font-size: 14px; line-height: 24px; color:#AB5E00;">This is the "small" text style in warning60.</p>
+						<p style="font-family: 'IBM Plex Sans'; font-size: 18px; line-height: 24px; color:#797671;">This is the "large" text style in grey50.</p>
+						<p style="font-family: 'IBM Plex Sans'; font-size: 24px; font-weight: 600; line-height: 24px; color:#312E2B; width: 850px;">This is the "leading strong" text style in grey80.</p>
+						<p style="font-family: 'IBM Plex Sans'; font-size: 32px; font-weight: 600; letter-spacing: -0.6px; line-height: 24px; color: #B6B3AF; width: 850px;">This is the heading 2 text style in grey30.</p>
+						<small class="artboard"><a href="img/Font/Headings@2x.png" title="design document png export" target="_blank">Headings text styles artboard</a></small>
+						<small class="artboard"><a href="img/Font/Paragraphs@2x.png" title="design document png export" target="_blank">Paragraph text styles artboard</a></small>
+						<small class="artboard"><a href="img/Font/Links@2x.png" title="design document png export" target="_blank">Links text styles artboard</a></small>
 					</div>
 				</article>
 			</div>
