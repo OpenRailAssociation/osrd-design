@@ -9,7 +9,6 @@
 </head>
 
 <body class="infrastructures">
-
 <nav>
 	<ol>
 		<li class="logo">OSRD</li>
@@ -20,10 +19,19 @@
 	</ol>
 	<a href="#" title="" class="user">Géraldine Jacquinot</a>
 	<div class="help">
-		<a href="#" title="toggle tooltips" class="help_tooltips">?</a>
+		<a href="#" title="toggle tooltips" id="tooltips_toggle" class="tooltips_off">?</a>
 		<a href="" title="open the OSRD user manual in a new window" id="user_manual">manual</a>
 	</div>
 </nav>
 </body>
-
+<script>
+      const toggleButton = document.getElementById("tooltips_toggle");
+      toggleButton.addEventListener("click", () => {
+        toggleButton.classList.contains("tooltips_off")
+          ? (toggleButton.classList.remove("tooltips_off"),
+            toggleButton.classList.add("tooltips_on"))
+          : (toggleButton.classList.remove("tooltips_on"),
+            toggleButton.classList.add("tooltips_off"));
+      });
+    </script>
 </html>
