@@ -19,19 +19,29 @@
 	</ol>
 	<a href="#" title="" class="user">Géraldine Jacquinot</a>
 	<div class="help">
-		<a href="#" title="toggle tooltips" id="tooltips_toggle" class="tooltips_off">?</a>
+		<a href="#" title="toggle tooltips" id="tooltips_toggle">?</a>
 		<a href="" title="open the OSRD user manual in a new window" id="user_manual">manual</a>
 	</div>
 </nav>
+<main>
+	<p id="tooltip_available">This contains a rather <span id="tooltip_1_hint">vague notion</span> for some users.
+		<div id="tooltip_1">
+			<p>A concise and simple langage definition of this vague notion with eventually an example to illustrate it.</p>
+			<a href="#" title="">open in user manual</a>
+		</div>
+	</p>
+</main>
 </body>
 <script>
-      const toggleButton = document.getElementById("tooltips_toggle");
-      toggleButton.addEventListener("click", () => {
-        toggleButton.classList.contains("tooltips_off")
-          ? (toggleButton.classList.remove("tooltips_off"),
-            toggleButton.classList.add("tooltips_on"))
-          : (toggleButton.classList.remove("tooltips_on"),
-            toggleButton.classList.add("tooltips_off"));
-      });
-    </script>
+  const toggleButton = document.getElementById("tooltips_toggle");
+  const displayHint = document.getElementById("tooltip_available");
+  toggleButton.addEventListener("click", () => {
+    toggleButton.classList.toggle("tooltips_on"),
+    displayHint.classList.toggle("tooltip_on")
+  });
+  const displayTooltip = document.getElementById("tooltip_1_hint");
+  displayTooltip.addEventListener("click", () => {
+    displayTooltip.classList.toggle("visible")
+  });
+</script>
 </html>

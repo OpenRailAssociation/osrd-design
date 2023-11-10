@@ -14,7 +14,7 @@ ___________|||______________________________|______________/
 <head>
 	<meta charset="utf-8">
 	<title>OSRD Interface Design Documentation</title>
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans|IBM+Plex+Serif:400,600,i">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,600|IBM+Plex+Serif:400,600,i">
 	<link rel="stylesheet" href="style.css" >
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.png">
 </head>
@@ -26,7 +26,7 @@ ___________|||______________________________|______________/
 		<p id="intro">The aim of this document is to explain the rationale leading to the <a href="https://osrd.fr" title="Find out more about OSRD" traget="_blank">OSRD</a> interface. From general considerations to Design System elements and specific OSRD features, it will list the choices made to build the OSRD graphical interface.</p>
 		<!--<small>The OSRD Design System documentation is <a href="https://osrd.fr/design-system">here</a>.</small>-->
 		<nav>
-			<h4>Table of contents</h4>
+			<h4 id="toc">Table of contents</h4>
 			<ul class="index_group">
 				<li><a href="#method">Method</a></li>
 				<li><a href="#aspirations">Aspirations</a></li>
@@ -40,13 +40,15 @@ ___________|||______________________________|______________/
 				<li><a href="#fonts">Typography</a></li>
 				<li><a href="#icons">Icons</a></li>
 			</ul>
-			<!--
+			
 			<ul class="index_group">
-				<li><a href="#navigation">Navigation</a></li>
-				<li><a href="#authentification">Authentification</a></li>
-				<li><a href="#messaging">Messaging</a></li>
+				<li><a href="#messageBanners">Message banners</a></li>
+				<!--
+				<li><a href="#navigation">Navigation</a></li>	
 				<li><a href="#screen_structure">Screen structure</a></li>
+				-->
 			</ul>
+			<!--
 			<ul class="index_group">
 				<li><a href="#text_input">Text input</a></li>
 				<li><a href="#select">Select</a></li>
@@ -57,6 +59,7 @@ ___________|||______________________________|______________/
 		</nav>
 	</header>
 	<main>
+	<a href="#toc" id="toc_link">table of content</a>
 		<section>
 			<div class="topic">
 				<h2 id="method">Method</h2>
@@ -432,7 +435,61 @@ ___________|||______________________________|______________/
 				</article>
 			</div>
 		</section>
+		
+		<section>
+			<div class="topic">
+				<h2 id="messageBanners">Message banners</h2>
+				<article>
+					<time datetime="2023-11-08T">08.11.2023</time>
+					<div class="text">
+						<p>Banners are used to display concise messages about the service itself: what the user should know about OSRD at this particular moment to be as efficient as possible. New features availability, upcoming maintenance, or connectivity issues are good examples.</p>
+						<p>They should not be used to display user interactions feedback, such as form validation.</p>
+						<p>Banners are a straightforward use of the colours, icons, and text styles previously described here.</p>
+						<div class="banner_sample">
+							<div class="banner info">
+								<p>New feature</p>
+								<p class="banner_message_content">Filter infrastructure issues using <a href="#" title="find out more">keywords</a>.</p>
+								<a href="#" class="banner_close" title="dismiss this message">dismiss</a>
+							</div>
+						</div>
+						
+						<div class="banner_sample">
+							<div class="banner success">
+								<p>We're back</p>
+								<p class="banner_message_content">Your work has synced with the server.</p>
+								<a href="#" class="banner_close" title="dismiss this message">dismiss</a>
+							</div>
+						</div>
+						
+						<div class="banner_sample">
+							<div class="banner warning">
+								<p>Octobre 30, 7:00 → 8:00</p>
+								<p class="banner_message_content">There will be a <a href="#" title="find out more">scheduled maintenance</a>.</p>
+								<a href="#" class="banner_close" title="dismiss this message">dismiss</a>
+							</div>
+						</div>
+						
+						<div class="banner_sample">
+							<div class="banner error">
+								<p>Server unavailable</p>
+								<p class="banner_message_content">Your work is saved to your browser’s memory.</p>
+								<a href="#" class="banner_close" title="dismiss this message">dismiss</a>
+							</div>
+						</div>
+						<h4>Layout</h4>
 
+						<p>Their height can remain minimal as their background colour will make them stand out visually and hard to miss.</p>
+						<p>They&#8217;re composed of a backdrop solid color, an icon, a short title, an optional short text which might contain a link, an optional dismiss button, and a horizontal rule to isolate them from the app. All these elements are themed to reflect the nature of the message: information, success, warning or error. The icons can be generic to this nature, or more specific to the message when possible.</p>
+						<h4>Icons</h4>
+						<p>Positive message get outline icons, and negative message get filled icons, for more visual impact</p>
+						<h4>Bottom border</h4>
+						<p>It&#8217;s built with two strokes, which will (supposedly) not be used anywhere else in the app. A white stroke at the bottom creates a discreet stamped visual effect, participating in adding depth to OSRD&#8217;s interface.</p>
+						<h4>Link</h4>
+						<p>They keep the primary colour to stand out more. Banners are for important messages, but their compact format doesn&#8217;t allow for much details. If more details need to be communicated to users, having striking links in the message will make it more likely for them to visit them. The alternative would have been to use the text colour of the message with an underline, but it doesn&#8217;t make links stand out enough.</p>	
+					</div>
+				</article>
+			</div>
+		</section>
 	</main>
 	<footer>
 		<p>We ❤︎ trains</p>
