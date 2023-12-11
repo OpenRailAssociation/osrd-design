@@ -1,0 +1,85 @@
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>OSRD Buttons</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,500,600">
+	<link rel="stylesheet" href="buttons.css" >
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.png">
+</head>
+
+<body>
+<h2>Primary buttons</h2>
+	<div class="button_group">
+	<div class="button_container">
+		<a class="button_large_primary" href="#" title="">Primary large</a>
+	</div>
+	<div class="button_container">
+		<a class="button_medium_primary" href="#" title="">Primary medium</a>
+	</div>
+	<div class="button_container">
+		<a class="button_small_primary" href="#" title="">Primary small</a>
+	</div>
+	</div>
+<h2>Normal buttons</h2>
+	<div class="button_group">
+		<div class="button_container">
+			<a class="button_large_normal" href="#" title="">Normal large</a>
+		</div>
+		<div class="button_container">
+			<a class="button_medium_normal" href="#" title="">Normal medium</a>
+		</div>
+		<div class="button_container">
+			<a class="button_small_normal" href="#" title="">Normal small</a>
+		</div>
+	</div>
+<h2>Cancel buttons</h2>
+	<div class="button_group">
+		<div class="button_container">
+			<a class="button_large_cancel" href="#" title="">Cancel large</a>
+		</div>
+		<div class="button_container">
+			<a class="button_medium_cancel" href="#" title="">Cancel medium</a>
+		</div>
+		<div class="button_container">
+			<a class="button_small_cancel" href="#" title="">Cancel small</a>
+		</div>
+	</div>
+<h2>Quiet buttons</h2>
+	<div class="button_group">
+		<div class="button_container">
+			<a class="button_large_quiet" href="" title="">Quiet large</a>
+		</div>
+		<div class="button_container">
+			<a class="button_medium_quiet" href="" title="">Quiet medium</a>
+		</div>
+		<div class="button_container">
+			<a class="button_small_quiet" href="" title="">Quiet small</a>
+		</div>
+	</div>
+<h2>Destructive buttons</h2>
+	<div class="button_group">
+		<div class="button_container">
+			<a class="button_large_destructive" href="#" title="">Destructive large</a>
+		</div>
+		<div class="button_container">
+			<a class="button_medium_destructive" href="#" title="">Destructive medium</a>
+		</div>
+		<div class="button_container">
+			<a class="button_small_destructive" href="#" title="">Destructive small</a>
+		</div>
+	</div>
+</body>
+<script>
+  const toggleButton = document.getElementById("tooltips_toggle");
+  const displayHint = document.getElementById("tooltip_available");
+  toggleButton.addEventListener("click", () => {
+    toggleButton.classList.toggle("tooltips_on"),
+    displayHint.classList.toggle("tooltip_on")
+  });
+  const displayTooltip = document.getElementById("tooltip_1_hint");
+  displayTooltip.addEventListener("click", () => {
+    displayTooltip.classList.toggle("visible")
+  });
+</script>
+</html>
