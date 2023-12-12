@@ -75,7 +75,7 @@ h2 {
 	top: 0.5px;
 	background-image: linear-gradient(180deg, #1D1BC9 1%, #1F0F96 100%);
 	border: 0.5px solid #000000;
-	box-shadow: 0 1px 0 0 rgba(0,0,0,0.15), inset 0 -1px 1px 0 rgba(0,47,152,0.83), inset 0 1px 0 0 rgba(201,252,255,0.28);
+	box-shadow: 0 1px 0 0 #FFFFFF, inset 0 1px 1px 0 rgba(0,41,132,0.83);
 	border-radius: 6px;
 	color: #F5F5F5;
 	text-shadow: none;
@@ -108,7 +108,7 @@ h2 {
 	top: 0.5px;
 	background-image: linear-gradient(180deg, #1D1BC9 1%, #1F0F96 100%);
 	border: 0.5px solid #000000;
-	box-shadow: 0 1px 0 0 rgba(0,0,0,0.15), inset 0 -1px 1px 0 rgba(0,47,152,0.83), inset 0 1px 0 0 rgba(201,252,255,0.28);
+	box-shadow: 0 1px 0 0 #FFFFFF, inset 0 1px 1px 0 rgba(0,41,132,0.83);
 	border-radius: 6px;
 	color: #F5F5F5;
 	text-shadow: none;
@@ -121,7 +121,7 @@ h2 {
 	padding: 0 8px;
 	background-image: linear-gradient(180deg, #2C6EF9 1%, #1844EF 100%);
 	border: 0.5px solid #000000;
-	box-shadow: 0 1px 2px 0 rgba(0,0,0,0.50), inset 0 -1px 1px 0 rgba(0,47,152,0.83), inset 0 1px 0 0 rgba(201,252,255,0.54);
+	box-shadow: 0 1px 0 0 #FFFFFF, inset 0 1px 1px 0 rgba(0,41,132,0.83);
 	border-radius: 5px;	
 	color: #F5F5F5;
 	text-shadow: 0 1px 0 rgba(0,0,0,0.36);
@@ -367,18 +367,18 @@ h2 {
 }
 
 .button_large_quiet:hover {
-	background-image: linear-gradient(180deg, #E3EDFC 0%, #C4DAF5 100%);
-	border: 0.5px solid #201EDE;
-	box-shadow: 0 1px 2px 0 rgba(0,0,0,0.25), inset 0 -1px 1px 0 #72A8F7, inset 0 1px 1px 0 rgba(255,255,255,0.46);
+	background-image: linear-gradient(180deg, #E3EDFC 0%, #D3E6FD 100%);
+	border: 0.5px solid #72A8F7;
+	box-shadow: 0 1px 2px 0 rgba(0,0,0,0.25), inset 0 -1px 1px 0 rgba(114,168,247,0.38), inset 0 1px 1px 0 rgba(255,255,255,0.46);
 	color: #1844EF;
 	text-shadow: 0 1px 0 rgba(255,255,255,0.84);
 }
 
 .button_large_quiet:active {
 	top: 0.5px;
-	background-image: linear-gradient(180deg, #B2D3FB 1%, #98C0F5 99%);
-	border: 0.5px solid #1F0F96;
-	box-shadow: 0 1px 0 0 #FFFFFF, inset 0 1px 1px 0 #72A8F7;
+	background-image: linear-gradient(180deg, #D6E5FB 1%, #C4DAF5 99%);
+	border: 0.5px solid #3C8AFF;
+	box-shadow: 0 1px 0 0 #FFFFFF, inset 0 1px 1px 0 #98C0F5;
 	color: #201EDE;
 	text-shadow: 0 1px 0 rgba(255,255,255,0.70);
 }
@@ -398,18 +398,17 @@ h2 {
 }
 
 .button_medium_quiet:hover {
-	background-image: linear-gradient(180deg, #E3EDFC 0%, #C4DAF5 100%);
-	border: 0.5px solid #201EDE;
-	box-shadow: 0 1px 2px 0 rgba(0,0,0,0.25), inset 0 -1px 1px 0 #72A8F7, inset 0 1px 1px 0 rgba(255,255,255,0.46);
-	color: #1844EF;
+	background-image: linear-gradient(180deg, #E3EDFC 0%, #D3E6FD 100%);
+	border: 0.5px solid #72A8F7;
+	box-shadow: 0 1px 2px 0 rgba(0,0,0,0.25), inset 0 -1px 1px 0 rgba(114,168,247,0.38), inset 0 1px 1px 0 rgba(255,255,255,0.46);
 	text-shadow: 0 1px 0 rgba(255,255,255,0.84);
 }
 
 .button_medium_quiet:active {
 	top: 0.5px;
-	background-image: linear-gradient(180deg, #B2D3FB 1%, #98C0F5 99%);
-	border: 0.5px solid #1F0F96;
-	box-shadow: 0 1px 0 0 #FFFFFF, inset 0 1px 1px 0 #72A8F7;
+	background-image: linear-gradient(180deg, #D6E5FB 1%, #C4DAF5 99%);
+	border: 0.5px solid #3C8AFF;
+	box-shadow: 0 1px 0 0 #FFFFFF, inset 0 1px 1px 0 #98C0F5;
 	color: #201EDE;
 	text-shadow: 0 1px 0 rgba(255,255,255,0.70);
 }
@@ -430,17 +429,17 @@ h2 {
 
 .button_small_quiet:hover {
 	background-image: linear-gradient(180deg, #E3EDFC 0%, #C4DAF5 100%);
-	border: 0.5px solid #201EDE;
-	box-shadow: 0 1px 2px 0 rgba(0,0,0,0.25), inset 0 -1px 1px 0 #72A8F7, inset 0 1px 1px 0 rgba(255,255,255,0.46);
+	border: 0.5px solid #98C0F5;
+	box-shadow: 0 0.5px 1.5px 0 rgba(0,0,0,0.25), inset 0 -1px 1px 0 rgba(114,168,247,0.38), inset 0 1px 1px 0 rgba(255,255,255,0.46);
 	color: #1844EF;
 	text-shadow: 0 1px 0 rgba(255,255,255,0.84);
 }
 
 .button_small_quiet:active {
 	top: 0.5px;
-	background-image: linear-gradient(180deg, #B2D3FB 1%, #98C0F5 99%);
-	border: 0.5px solid #1F0F96;
-	box-shadow: 0 1px 0 0 #FFFFFF, inset 0 1px 1px 0 #72A8F7;
+	background-image: linear-gradient(180deg, #D6E5FB 1%, #C4DAF5 99%);
+	border: 0.5px solid #3C8AFF;
+	box-shadow: 0 1px 0 0 #FFFFFF, inset 0 1px 1px 0 #98C0F5;
 	color: #201EDE;
 	text-shadow: 0 1px 0 rgba(255,255,255,0.70);
 }
