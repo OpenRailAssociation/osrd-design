@@ -24,6 +24,10 @@ a:link, a:visited {
 	font-weight: 500;
 }
 
+a:hover {
+	cursor: pointer;
+}
+
 h2 {
 	margin-top: 64px;
 }
@@ -55,7 +59,7 @@ h2 {
 	padding: 0 16px;
 	background-image: linear-gradient(180deg, #2C6EF9 1%, #1844EF 100%);
 	border: 0.5px solid #000000;
-	box-shadow: 0 1px 2px 0 rgba(0,0,0,0.50), inset 0 -1px 1px 0 rgba(0,47,152,0.83), inset 0 1px 0 0 rgba(201,252,255,0.54);
+	box-shadow: 0 1px 2px 0 rgba(0,0,0,0.50), inset 0 -1px 1px 0 rgba(0,47,152,0.83), inset 0 1px 0 0 rgba(201,252,255,0.35);
 	border-radius: 6px;	
 	color: #F5F5F5;
 	text-shadow: 0 1px 0 rgba(0,0,0,0.36);
@@ -66,7 +70,7 @@ h2 {
 .button_large_primary:hover {
 	background-image: linear-gradient(180deg, #1844EF 1%, #201EDE 100%);
 	border: 0.5px solid #000000;
-	box-shadow: 0 1px 2px 0 rgba(0,0,0,0.50), inset 0 -1px 1px 0 rgba(0,47,152,0.83), inset 0 1px 0 0 rgba(201,252,255,0.54);
+	box-shadow: 0 1px 2px 0 rgba(0,0,0,0.50), inset 0 -1px 1px 0 rgba(0,47,152,0.83), inset 0 1px 0 0 rgba(201,252,255,0.4);
 	color: #FFFFFF;
 	text-shadow: 0 1px 0 rgba(0,0,0,0.36);
 }
@@ -88,7 +92,7 @@ h2 {
 	padding: 0 12px;
 	background-image: linear-gradient(180deg, #2C6EF9 1%, #1844EF 100%);
 	border: 0.5px solid #000000;
-	box-shadow: 0 1px 2px 0 rgba(0,0,0,0.50), inset 0 -1px 1px 0 rgba(0,47,152,0.83), inset 0 1px 0 0 rgba(201,252,255,0.54);
+	box-shadow: 0 1px 2px 0 rgba(0,0,0,0.50), inset 0 -1px 1px 0 rgba(0,47,152,0.83), inset 0 1px 0 0 rgba(201,252,255,0.35);
 	border-radius: 5px;	
 	color: #F5F5F5;
 	text-shadow: 0 1px 0 rgba(0,0,0,0.36);
@@ -99,7 +103,7 @@ h2 {
 .button_medium_primary:hover {
 	background-image: linear-gradient(180deg, #1844EF 1%, #201EDE 100%);
 	border: 0.5px solid #000000;
-	box-shadow: 0 1px 2px 0 rgba(0,0,0,0.50), inset 0 -1px 1px 0 rgba(0,47,152,0.83), inset 0 1px 0 0 rgba(201,252,255,0.54);
+	box-shadow: 0 1px 2px 0 rgba(0,0,0,0.50), inset 0 -1px 1px 0 rgba(0,47,152,0.83), inset 0 1px 0 0 rgba(201,252,255,0.4);
 	color: #FFFFFF;
 	text-shadow: 0 1px 0 rgba(0,0,0,0.36);
 }
@@ -121,7 +125,7 @@ h2 {
 	padding: 0 8px;
 	background-image: linear-gradient(180deg, #2C6EF9 1%, #1844EF 100%);
 	border: 0.5px solid #000000;
-	box-shadow: 0 1px 2px 0 rgba(0,0,0,0.50), inset 0 -1px 1px 0 rgba(0,47,152,0.83), inset 0 1px 0 0 rgba(201,252,255,0.54);
+	box-shadow: 0 1px 2px 0 rgba(0,0,0,0.50), inset 0 -1px 1px 0 rgba(0,47,152,0.83), inset 0 1px 0 0 rgba(201,252,255,0.35);
 	border-radius: 5px;	
 	color: #F5F5F5;
 	text-shadow: 0 1px 0 rgba(0,0,0,0.36);
@@ -132,7 +136,7 @@ h2 {
 .button_small_primary:hover {
 	background-image: linear-gradient(180deg, #1844EF 1%, #201EDE 100%);
 	border: 0.5px solid #000000;
-	box-shadow: 0 1px 2px 0 rgba(0,0,0,0.50), inset 0 -1px 1px 0 rgba(0,47,152,0.83), inset 0 1px 0 0 rgba(201,252,255,0.54);
+	box-shadow: 0 1px 2px 0 rgba(0,0,0,0.50), inset 0 -1px 1px 0 rgba(0,47,152,0.83), inset 0 1px 0 0 rgba(201,252,255,0.4);
 	color: #FFFFFF;
 	text-shadow: 0 1px 0 rgba(0,0,0,0.36);
 }
@@ -167,7 +171,7 @@ h2 {
 }
 
 .button_large_normal:hover {
-	background-image: linear-gradient(180deg, #F5F5F5 0%, #EBEBEA 100%);
+	background-image: linear-gradient(180deg, #EBEBEA 0%, #E4E2E0 100%);
 	border: 0.5px solid #1F1B17;
 	box-shadow: 0 1px 2px 0 rgba(0,0,0,0.25), inset 0 -1px 1px 0 #B6B3AF, inset 0 1px 1px 0 rgba(255,255,255,0.46);
 	color: #1F1B17;
@@ -199,7 +203,7 @@ h2 {
 }
 
 .button_medium_normal:hover {
-	background-image: linear-gradient(180deg, #F5F5F5 0%, #EBEBEA 100%);
+	background-image: linear-gradient(180deg, #EBEBEA 0%, #E4E2E0 100%);
 	border: 0.5px solid #1F1B17;
 	box-shadow: 0 1px 2px 0 rgba(0,0,0,0.25), inset 0 -1px 1px 0 #B6B3AF, inset 0 1px 1px 0 rgba(255,255,255,0.46);
 	color: #1F1B17;
@@ -231,7 +235,7 @@ h2 {
 }
 
 .button_small_normal:hover {
-	background-image: linear-gradient(180deg, #F5F5F5 0%, #EBEBEA 100%);
+	background-image: linear-gradient(180deg, #EBEBEA 0%, #E4E2E0 100%);
 	border: 0.5px solid #1F1B17;
 	box-shadow: 0 1px 2px 0 rgba(0,0,0,0.25), inset 0 -1px 1px 0 #B6B3AF, inset 0 1px 1px 0 rgba(255,255,255,0.46);
 	color: #1F1B17;
@@ -256,7 +260,7 @@ h2 {
 	left: 0;
 	padding: 0 16px;
 	background: rgba(255,255,255,0.60);
-	border: 1.5px solid #797671;
+	border: 1px solid #797671;
 	box-shadow: inset 0 -1px 1px 0 #D3D1CF, inset 0 2px 0 0 #FFFFFF;
 	border-radius: 6px;
 	font-size: 18px;
@@ -267,8 +271,8 @@ h2 {
 
 .button_large_cancel:hover {
 	background: #FFFFFF;
-	border: 1.5px solid #494641;
-	box-shadow: inset 0 -1px 1px 0 #94918E, inset 0 2px 0 0 #FFFFFF;
+	border: 1px solid #312E2B;
+	box-shadow: inset 0 -1px 1px 0 #D3D1CF, inset 0 3px 0 0 #FFFFFF;
 	border-radius: 6px;
 	color: #494641;
 	text-shadow: 0 1px 0 rgba(255,255,255,0.84);
@@ -276,9 +280,10 @@ h2 {
 
 .button_large_cancel:active {
 	top: 0.5px;
-	background: rgba(0,0,0,0.05);
-	border: 1.5px solid #1F1B17;
-	box-shadow: inset 0 -1px 0 0 #FFFFFF, inset 0 2px 1px 0 #D3D1CF;
+	background: rgba(0,0,0,0.02);
+	border: 1px solid #94918E;
+	border-top: 1.5px solid #797671;
+	box-shadow: 0 1.5px 0 0 #FFFFFF, inset 0 2px 2px 0 #D3D1CF;
 	color: #494641;
 	text-shadow: 0 1px 0 rgba(255,255,255,0.84);
 }
@@ -289,7 +294,7 @@ h2 {
 	left: 0;
 	padding: 0 12px;
 	background: rgba(255,255,255,0.60);
-	border: 1.5px solid #797671;
+	border: 1px solid #797671;
 	box-shadow: inset 0 -1px 1px 0 #D3D1CF, inset 0 2px 0 0 #FFFFFF;
 	border-radius: 6px;
 	font-size: 16px;
@@ -300,8 +305,8 @@ h2 {
 
 .button_medium_cancel:hover {
 	background: #FFFFFF;
-	border: 1.5px solid #494641;
-	box-shadow: inset 0 -1px 1px 0 #94918E, inset 0 2px 0 0 #FFFFFF;
+	border: 1px solid #312E2B;
+	box-shadow: inset 0 -1px 1px 0 #D3D1CF, inset 0 3px 0 0 #FFFFFF;
 	border-radius: 6px;
 	color: #494641;
 	text-shadow: 0 1px 0 rgba(255,255,255,0.84);
@@ -309,9 +314,10 @@ h2 {
 
 .button_medium_cancel:active {
 	top: 0.5px;
-	background: rgba(0,0,0,0.05);
-	border: 1.5px solid #1F1B17;
-	box-shadow: inset 0 -1px 0 0 #FFFFFF, inset 0 2px 1px 0 #D3D1CF;
+	background: rgba(0,0,0,0.02);
+	border: 1px solid #94918E;
+	border-top: 1.5px solid #797671;
+	box-shadow: 0 1.5px 0 0 #FFFFFF, inset 0 1px 2px 0 #D3D1CF;
 	color: #494641;
 	text-shadow: 0 1px 0 rgba(255,255,255,0.84);
 }
@@ -322,7 +328,7 @@ h2 {
 	left: 0;
 	padding: 0 8px;
 	background: rgba(255,255,255,0.60);
-	border: 1.5px solid #797671;
+	border: 1px solid #797671;
 	box-shadow: inset 0 -1px 1px 0 #D3D1CF, inset 0 2px 0 0 #FFFFFF;
 	border-radius: 6px;
 	font-size: 14px;
@@ -333,8 +339,8 @@ h2 {
 
 .button_small_cancel:hover {
 	background: #FFFFFF;
-	border: 1.5px solid #494641;
-	box-shadow: inset 0 -1px 1px 0 #94918E, inset 0 2px 0 0 #FFFFFF;
+	border: 1px solid #312E2B;
+	box-shadow: inset 0 -1px 1px 0 #D3D1CF, inset 0 3px 0 0 #FFFFFF;
 	border-radius: 6px;
 	color: #494641;
 	text-shadow: 0 1px 0 rgba(255,255,255,0.84);
@@ -342,9 +348,10 @@ h2 {
 
 .button_small_cancel:active {
 	top: 0.5px;
-	background: rgba(0,0,0,0.05);
-	border: 1.5px solid #1F1B17;
-	box-shadow: inset 0 -1px 0 0 #FFFFFF, inset 0 2px 1px 0 #D3D1CF;
+	background: rgba(0,0,0,0.02);
+	border: 1px solid #94918E;
+	border-top: 1.5px solid #797671;
+	box-shadow: 0 1.5px 0 0 #FFFFFF, inset 0 1px 2px 0 #D3D1CF;
 	color: #494641;
 	text-shadow: 0 1px 0 rgba(255,255,255,0.84);
 }
