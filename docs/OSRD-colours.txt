@@ -1,0 +1,91 @@
+Open Source Railway Designer
+Design System Colour references
+5 January 2024
+
+
+
+
+
+
+AmbientA15   #E9EFF2
+AmbientA10   #EFF3F5
+AmbientA5    #F6F8F9
+  
+AmbientB15   #F2F0E4
+AmbientB10   #F7F6EE
+AmbientB5    #FAF9F5
+
+AmbientC15   #EAF0EB
+AmbientC10   #F0F4F1
+AmbientC5    #F6F9F6
+
+AmbientD15   #EFEDF7
+AmbientD10   #F4F3FC
+AmbientD5    #F8F7FD
+
+
+
+Grey5        #F5F5F5
+Grey10       #EBEBEA
+Grey20       #D3D1CF
+Grey30       #B6B3AF
+Grey40       #94918E
+Grey50       #797671
+Grey60       #5C5955
+Grey70       #494641
+Grey80       #312E2B
+Grey90       #1F1B17
+
+
+
+Primary5     #E3EDFC
+Primary10    #C4DAF5
+Primary20    #98C0F5
+Primary30    #72A8F7
+Primary40    #3C8AFF
+Primary50    #256AFA
+Primary60    #1844EF
+Primary70    #201EDE
+Primary80    #1F0F96
+Primary90    #180F47
+
+
+
+Info5        #E6F7FF
+Info30       #70C1E5
+Info60       #216482
+Info80       #053348
+
+Success5     #E6F7EE
+Success30    #3CCA80
+Success60    #0B723C
+Success80    #003F1E
+
+Warning5     #FDF5E1
+Warning30    #EAA72B
+Warning60    #7D521E
+Warning80    #432807
+
+Error5       #FFEEED
+Error30      #FF6868
+Error60      #D91C1C
+Error80      #6B0000
+
+Highlight50  #FFF700
+Highlight30  #E8D900
+
+
+
+Black100     #000
+Black75      rgba(0,0,0,0.75)
+Black50      rgba(0,0,0,0.50)
+Black25      rgba(0,0,0,0.25)
+Black10      rgba(0,0,0,0.10)
+Black5       rgba(0,0,0,0.05)
+
+White100     #FFF
+White75      rgba(255,255,255,0.75)
+White50      rgba(255,255,255,0.50)
+White25      rgba(255,255,255,0.25)
+
+
