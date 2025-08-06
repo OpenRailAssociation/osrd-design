@@ -1,91 +1,174 @@
 Open Source Railway Designer
 Design System Colour references
-5 January 2024
+5 August 2025
 
 
 
+AmbientA15          #E9EFF2
+AmbientA10          #EFF3F5
+AmbientA5           #F6F8F9
+         
+AmbientB15          #F2F0E4
+AmbientB10          #F7F6EE
+AmbientB5           #FAF9F5
+       
+AmbientC15          #EAF0EB
+AmbientC10          #F0F4F1
+AmbientC5           #F6F9F6
+       
+AmbientD15          #EFEDF7
+AmbientD10          #F4F3FC
+AmbientD5           #F8F7FD
+
+
+   
+Grey5               #F5F5F5
+Grey10              #EBEBEA
+Grey20              #D3D1CF
+Grey30              #B6B3AF
+Grey40              #94918E
+Grey50              #797671
+Grey60              #5C5955
+Grey70              #494641
+Grey80              #312E2B
+Grey90              #1F1B17
+       
+       
+       
+Primary5            #E3EDFC
+Primary10           #C4DAF5
+Primary20           #98C0F5
+Primary30           #72A8F7
+Primary40           #3C8AFF
+Primary50           #256AFA
+Primary60           #1844EF
+Primary70           #201EDE
+Primary80           #1F0F96
+Primary90           #180F47
 
 
 
-AmbientA15   #E9EFF2
-AmbientA10   #EFF3F5
-AmbientA5    #F6F8F9
+TrainPurple5        #F2F3FC
+TrainPurple10       #E6E7FF
+TrainPurple30       #B3A1FF
+TrainPurple50       #8757E6
+TrainPurple70       #58318F
+   
+TrainParma5         #FAF2F8
+TrainParma10        #FAE6F6
+TrainParma30        #EA94D8
+TrainParma50        #B2539E
+TrainParma70        #732963
+   
+TrainBlue5          #F0F5FC
+TrainBlue10         #E0EDFF
+TrainBlue30         #81AFF1
+TrainBlue50         #3470E0
+TrainBlue70         #244C91
+   
+TrainCyan5          #EDF9FF
+TrainCyan10         #D9F2FF
+TrainCyan30         #45ABE2
+TrainCyan50         #127DB8
+TrainCyan70         #165070
+   
+TrainMint5          #F0FAF7
+TrainMint10         #DAF7EE
+TrainMint30         #55B7AF
+TrainMint50         #13857B
+TrainMint70         #085953
+   
+TrainGreen5         #EFF5EB
+TrainGreen10        #E4EDDF
+TrainGreen30        #86BA68
+TrainGreen50        #54823B
+TrainGreen70        #2C4F19
+   
+TrainSage5          #F0F7EB
+TrainSage10         #E1EDD8
+TrainSage30         #93AD82
+TrainSage50         #687C5C
+TrainSage70         #444D3C
+   
+TrainYellow5        #FFF7E0
+TrainYellow10       #FCEEC2
+TrainYellow30       #FFB700
+TrainYellow50       #996E00
+TrainYellow70       #634A00
+   
+TrainOrange5        #FFF5ED
+TrainOrange10       #FFE7D6
+TrainOrange30       #FF8B38
+TrainOrange50       #C75300
+TrainOrange70       #803500
+   
+TrainPink5          #FFF2F7
+TrainPink10         #FFE8F2
+TrainPink30         #FC86B7
+TrainPink50         #E02271
+TrainPink70         #870048
+   
+TrainRed5           #FCF5F5
+TrainRed10          #FAE7E6
+TrainRed30          #FF7873
+TrainRed50          #E6221A
+TrainRed70          #912420
+   
+TrainBrown5         #F7F3EC
+TrainBrown10        #EEE7D9
+TrainBrown30        #B39E7E
+TrainBrown50        #8A714B
+TrainBrown70        #594525
+   
+TrainBlack5         #F4F6F8
+TrainBlack10        #E7ECF2
+TrainBlack30        #A3B1BD
+TrainBlack50        #6C767F
+TrainBlack70        #3F464B
+
+
+
+OccupancyFree       #CAEDDB
+OccupancyWarning    #FFEABF
+OccupancySemaphore  #FFD4D8
+
+
+
+Info5               #E6F7FF
+Info30              #70C1E5
+Info60              #216482
+Info80              #053348
+
+Success5            #E6F7EE
+Success30           #3CCA80
+Success60           #0B723C
+Success80           #003F1E
+       
+Warning5            #FDF5E1
+Warning30           #EAA72B
+Warning60           #7D521E
+Warning80           #432807
+       
+Error5              #FFEEED
+Error30             #FF6868
+Error60             #D91C1C
+Error80             #6B0000
+       
+Highlight50         #FFF700
+Highlight30         #E8D900
+
+
+
+BlackAlpha100       #000
+BlackAlpha75        rgba(0,0,0,0.75)
+BlackAlpha50        rgba(0,0,0,0.50)
+BlackAlpha25        rgba(0,0,0,0.25)
+BlackAlpha10        rgba(0,0,0,0.10)
+BlackAlpha5         rgba(0,0,0,0.05)
   
-AmbientB15   #F2F0E4
-AmbientB10   #F7F6EE
-AmbientB5    #FAF9F5
-
-AmbientC15   #EAF0EB
-AmbientC10   #F0F4F1
-AmbientC5    #F6F9F6
-
-AmbientD15   #EFEDF7
-AmbientD10   #F4F3FC
-AmbientD5    #F8F7FD
-
-
-
-Grey5        #F5F5F5
-Grey10       #EBEBEA
-Grey20       #D3D1CF
-Grey30       #B6B3AF
-Grey40       #94918E
-Grey50       #797671
-Grey60       #5C5955
-Grey70       #494641
-Grey80       #312E2B
-Grey90       #1F1B17
-
-
-
-Primary5     #E3EDFC
-Primary10    #C4DAF5
-Primary20    #98C0F5
-Primary30    #72A8F7
-Primary40    #3C8AFF
-Primary50    #256AFA
-Primary60    #1844EF
-Primary70    #201EDE
-Primary80    #1F0F96
-Primary90    #180F47
-
-
-
-Info5        #E6F7FF
-Info30       #70C1E5
-Info60       #216482
-Info80       #053348
-
-Success5     #E6F7EE
-Success30    #3CCA80
-Success60    #0B723C
-Success80    #003F1E
-
-Warning5     #FDF5E1
-Warning30    #EAA72B
-Warning60    #7D521E
-Warning80    #432807
-
-Error5       #FFEEED
-Error30      #FF6868
-Error60      #D91C1C
-Error80      #6B0000
-
-Highlight50  #FFF700
-Highlight30  #E8D900
-
-
-
-Black100     #000
-Black75      rgba(0,0,0,0.75)
-Black50      rgba(0,0,0,0.50)
-Black25      rgba(0,0,0,0.25)
-Black10      rgba(0,0,0,0.10)
-Black5       rgba(0,0,0,0.05)
-
-White100     #FFF
-White75      rgba(255,255,255,0.75)
-White50      rgba(255,255,255,0.50)
-White25      rgba(255,255,255,0.25)
+WhiteAlpha100       #FFF
+WhiteAlpha75        rgba(255,255,255,0.75)
+WhiteAlpha50        rgba(255,255,255,0.50)
+WhiteAlpha25        rgba(255,255,255,0.25)
 
 
