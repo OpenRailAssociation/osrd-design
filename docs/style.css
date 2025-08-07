@@ -135,6 +135,24 @@ nav li {
 	margin-bottom: 0.2222em;
 	}
 
+#toc_link_top {
+	position: sticky;
+	top: 90vh;
+	left: 90vw;
+	font-size: 0.666em;
+	text-align: center;
+	display: block;
+	width: 8em;
+	padding: 1em 1.5em;
+	border-radius: 0.5em;
+	background-color: rgba(0,0,0,0.03);
+	backdrop-filter: blur(10px);
+}
+
+#toc_link_top:hover {
+	background-color: #fff;
+}
+
 main {
 	 padding: 3em;
 	}
@@ -327,17 +345,127 @@ li {
 	background: rgba(255,255,255,1) url(img/icn/artboard_fill.svg) no-repeat 1em 0.7857em;
 	}
 
-.banner_sample {
+.screen_sample {
 	width: 130%;
 	margin: 3em 0;
-	background-color: #F0F4F1;
 	border: 1em solid #fff;
 	box-shadow: 0 6px 20px rgba(0,0,0,0.05);
 	font-family: "IBM Plex sans";
 	font-size: 0.8888em; /* 16px @ 18px */
+	overflow: hidden;
 }
 
-.banner_sample > p {
+.ambientA {
+	background-color: #EFF3F5;
+}
+
+.ambientB {
+	background-color: #F7F6EE;
+}
+
+.ambientC {
+	background-color: #F0F4F1;
+}
+
+.ambientD {
+	background-color: #F4F3FC;
+}
+
+.elevation {
+	display: block;
+	width: 6em;
+	height: 6em;
+	border-radius: 0.5em;
+	background-color: #fff;
+	float: left;
+	margin: 3em 0 3em 3em;
+}
+
+.ambientA .down1 {
+	background: #E9EFF2;
+	box-shadow: inset 0 2px 2px -1px rgba(111,158,202,0.47), inset 0 1px 2px 0 rgba(0,0,0,0.20), 0 1px 0 0 #FFFFFF;
+}
+
+.ambientA .up1 {
+	box-shadow: 0 1px 2px 0 rgba(0,0,0,0.10), 0 2px 2px -1px rgba(24,68,239,0.16);
+}
+
+.ambientA .up2 {
+	box-shadow: inset 0 1px 0 0 #FFFFFF, 0 2px 4px 0 rgba(0,0,0,0.16), 0 4px 7px -3px rgba(24,68,239,0.19);
+}
+
+.ambientA .up3 {
+	box-shadow: 0 0.5px 1px 0 rgba(0,0,0,0.19), 0 5px 7px -3px rgba(0,0,0,0.10), 0 13px 12px -5px rgba(24,68,239,0.11);
+}
+
+.ambientA .up4 {
+	box-shadow: 0 3px 5px -2px rgba(0,0,0,0.10), 0 16px 30px -5px rgba(0,0,0,0.16), 0 6px 21px -5px rgba(24,68,239,0.26);
+}
+
+.ambientB .down1 {
+	background: #F2F0E4;
+	box-shadow: inset 0 2px 2px -1px rgba(214,153,93,0.17), inset 0 1px 2px 0 rgba(0,0,0,0.20), 0 1px 0 0 #FFFFFF;
+}
+
+.ambientB .up1 {
+	box-shadow: 0 1px 2px 0 rgba(0,0,0,0.16), 0 2px 2px -1px rgba(255,171,88,0.27);
+}
+
+.ambientB .up2 {
+	box-shadow: inset 0 1px 0 0 #FFFFFF, 0 2px 4px 0 rgba(0,0,0,0.22), 0 4px 7px -3px rgba(255,171,88,0.17);
+}
+
+.ambientB .up3 {
+	box-shadow: 0 0.5px 1px 0 rgba(0,0,0,0.15), 0 5px 9px -3px rgba(0,0,0,0.20), 0 13px 12px -5px rgba(255,171,88,0.13);
+}
+
+.ambientB .up4 {
+	box-shadow: 0 3px 5px -2px rgba(0,0,0,0.16), 0 16px 30px -5px rgba(0,0,0,0.19), 0 6px 21px -5px rgba(255,171,88,0.31);
+}
+
+.ambientC .down1 {
+	background: #EAF0EB;
+	box-shadow: inset 0 2px 2px -1px rgba(111,158,202,0.47), inset 0 1px 2px 0 rgba(0,0,0,0.20), 0 1px 0 0 #FFFFFF;
+}
+
+.ambientC .up1 {
+	box-shadow: 0 1px 2px 0 rgba(0,0,0,0.16), 0 2px 2px -1px rgba(102,162,217,0.27);
+}
+
+.ambientC .up2 {
+	box-shadow: inset 0 1px 0 0 #FFFFFF, 0 2px 4px 0 rgba(0,0,0,0.23), 0 4px 7px -3px rgba(115,181,241,0.28);
+}
+
+.ambientC .up3 {
+	box-shadow: 0 0.5px 1px 0 rgba(0,0,0,0.19), 0 5px 9px -3px rgba(0,0,0,0.20), 0 13px 12px -5px rgba(120,174,225,0.18);
+}
+
+.ambientC .up4 {
+	box-shadow: 0 3px 5px -2px rgba(0,0,0,0.10), 0 16px 30px -5px rgba(0,0,0,0.20), 0 6px 21px -5px rgba(101,169,232,0.34);
+}
+
+.ambientD .down1 {
+	background: #EFEDF7;
+	box-shadow: inset 0 2px 2px -1px rgba(182,171,232,0.47), inset 0 1px 2px 0 rgba(0,0,0,0.20), 0 1px 0 0 #FFFFFF;
+}
+
+.ambientD .up1 {
+	box-shadow: 0 1px 2px 0 rgba(0,0,0,0.16), 0 2px 2px -1px rgba(177,160,255,0.27);
+}
+
+.ambientD .up2 {
+	box-shadow: inset 0 1px 0 0 #FFFFFF, 0 2px 4px 0 rgba(0,0,0,0.21), 0 4px 7px -3px rgba(177,160,255,0.28);
+}
+
+.ambientD .up3 {
+	box-shadow: 0 0.5px 1px 0 rgba(0,0,0,0.19), 0 5px 9px -3px rgba(0,0,0,0.20), 0 13px 12px -5px rgba(177,160,255,0.18);
+}
+
+.ambientD .up4 {
+	box-shadow: 0 3px 5px -2px rgba(0,0,0,0.10), 0 16px 30px -5px rgba(0,0,0,0.20), 0 6px 21px -5px rgba(144,120,255,0.34);
+}
+
+.screen_sample > p {
 	font-family: "IBM Plex Serif";
 	font-size: 0.875em;
 	font-style: italic;

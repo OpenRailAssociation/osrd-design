@@ -20,7 +20,7 @@ ___________|||______________________________|______________/
 </head>
 
 <body>
-
+	<a href="#toc" id="toc_link_top">Table of Content</a>
 	<header>
 		<h1>OSRD design process</h1>
 		<p id="intro">The aim of this document is to explain the rationale leading to the <a href="https://osrd.fr" title="Find out more about OSRD" traget="_blank">OSRD</a> interface. From general considerations to Design System elements and specific OSRD features, it will list the choices made to build the OSRD graphical interface.</p>
@@ -42,10 +42,10 @@ ___________|||______________________________|______________/
 			</ul>
 			
 			<ul class="index_group">
+				<li><a href="#structure">Structure</a></li>
 				<li><a href="#messageBanners">Message banners</a></li>
 				<!--
-				<li><a href="#navigation">Navigation</a></li>	
-				<li><a href="#screen_structure">Screen structure</a></li>
+				<li><a href="#navigation">Navigation</a></li>
 				-->
 			</ul>
 			<!--
@@ -519,6 +519,66 @@ ___________|||______________________________|______________/
 		
 		<section>
 			<div class="topic">
+				<h2 id="structure">Structure</h2>
+				<article>
+					<time datetime="2025-08-07T">07.08.2025</time>
+					<div class="text">
+						<h3>Elevations</h3>
+						<h4>Intent</h4>
+						<p>Elevation levels participate in providing clues about informations and actions hierarchies to the user. Specifying them precisely helps designers to check that a given task using elevations fits logically in regards to others.</p>
+						<h4>Anatomy</h4>
+						<p>Elevations are visually conveyed by applying drop or inset shadows to container elements in order to simulate a z axis placement. The four OSRD main environments get their own ambient tint, and these shadows are specific to each of them. Black based drop shadow are less lively and realistic when placed on tinted backgrounds, and should only be used to reinforce a disabled state if need be.</p>
+						<div class="screen_sample ambientA">
+							<div class="elevation down1"></div>
+							<div class="elevation Up1"></div>
+							<div class="elevation Up2"></div>
+							<div class="elevation Up3"></div>
+							<div class="elevation Up4"></div>
+						</div>
+						<div class="screen_sample ambientB">
+							<div class="elevation down1"></div>
+							<div class="elevation Up1"></div>
+							<div class="elevation Up2"></div>
+							<div class="elevation Up3"></div>
+							<div class="elevation Up4"></div>
+						</div>
+						<div class="screen_sample ambientC">
+							<div class="elevation down1"></div>
+							<div class="elevation Up1"></div>
+							<div class="elevation Up2"></div>
+							<div class="elevation Up3"></div>
+							<div class="elevation Up4"></div>
+						</div>
+						<div class="screen_sample ambientD">
+							<div class="elevation down1"></div>
+							<div class="elevation Up1"></div>
+							<div class="elevation Up2"></div>
+							<div class="elevation Up3"></div>
+							<div class="elevation Up4"></div>
+						</div>
+						<small class="artboard"><a href="img/Structure/Elevations@2x.png" title="design document png export" target="_blank">View elevations artboard</a></small>
+						<h3>Boards</h3>
+						<h4>Intent</h4>
+						<p>Engineers evaluating and planning evolutions for a railroad network very often use multiple screens workstations, as the amount and the nature of informations they need at any given time requires a lot of screen real estate. Two monitors plugged to a laptop is very common. OSRD has to be able to exist on multiple monitors.</p>
+						<h4>Anatomy</h4>
+						<p>A board sits at the first elevation level.</p>
+						<ul>
+							<li>Header with a title and a board menu access button. When the board has tabs, they have a title and a tab menu access button.</li>
+							<li>Content space</li>
+							<li>Footer</li>
+							<li>Resize handles if there are adjacent boards above, below or on the sides.</li>
+						</ul>
+						<h4>Interactivity</h4>
+						<h4>User expression</h4>
+						<h4>Application feedback</h4>
+						<h4>Layout</h4>
+					</div>
+				</article>
+			</div>
+		</section>
+		
+		<section>
+			<div class="topic">
 				<h2 id="messageBanners">Message banners</h2>
 				<article>
 					<time datetime="2023-11-10T">10.11.2023</time>
@@ -526,7 +586,7 @@ ___________|||______________________________|______________/
 						<p>Displayed at the very top of the viewport, above any other content, banners are used to convey concise messages about the service itself: what the user should know about OSRD at this particular moment to be as efficient as possible. New features availability, upcoming maintenance, or connectivity issues are good examples.</p>
 						<p>They should not be used to display user interactions feedback, such as form validation. They are not sticky on scroll and can or cannot be dismissed.</p>
 						<p>Banners are a straightforward use of the colours, icons, and text styles previously described here.</p>
-						<div class="banner_sample">
+						<div class="screen_sample ambientC">
 							<div class="banner info">
 								<p>New feature</p>
 								<p class="banner_message_content">Filter infrastructure issues using <a href="#" title="find out more">keywords</a>.</p>
@@ -535,7 +595,7 @@ ___________|||______________________________|______________/
 							<p>the app will be in this area</p>
 						</div>
 						
-						<div class="banner_sample">
+						<div class="screen_sample ambientC">
 							<div class="banner success">
 								<p>We're back</p>
 								<p class="banner_message_content">Your work has synced with the server.</p>
@@ -544,7 +604,7 @@ ___________|||______________________________|______________/
 							<p>the app will be in this area</p>
 						</div>
 						
-						<div class="banner_sample">
+						<div class="screen_sample ambientC">
 							<div class="banner warning">
 								<p>Octobre 30, 7:00 → 8:00</p>
 								<p class="banner_message_content">There will be a <a href="#" title="find out more">scheduled maintenance</a>.</p>
@@ -553,7 +613,7 @@ ___________|||______________________________|______________/
 							<p>the app will be in this area</p>
 						</div>
 						
-						<div class="banner_sample">
+						<div class="screen_sample ambientC">
 							<div class="banner error">
 								<p>Server unavailable</p>
 								<p class="banner_message_content">Your work is saved to your browser’s memory.</p>
