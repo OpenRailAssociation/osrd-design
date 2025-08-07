@@ -25,6 +25,7 @@ ___________|||______________________________|______________/
 		<h1>OSRD design process</h1>
 		<p id="intro">The aim of this document is to explain the rationale leading to the <a href="https://osrd.fr" title="Find out more about OSRD" traget="_blank">OSRD</a> interface. From general considerations to Design System elements and specific OSRD features, it will list the choices made to build the OSRD graphical interface.</p>
 		<!--<small>The OSRD Design System documentation is <a href="https://osrd.fr/design-system">here</a>.</small>-->
+		<div id="toc"></div>
 		<nav>
 			<h4 id="toc">Table of contents</h4>
 			<ul class="index_group">
@@ -559,19 +560,27 @@ ___________|||______________________________|______________/
 						<small class="artboard"><a href="img/Structure/Elevations@2x.png" title="design document png export" target="_blank">View elevations artboard</a></small>
 						<h3>Boards</h3>
 						<h4>Intent</h4>
-						<p>Engineers evaluating and planning evolutions for a railroad network very often use multiple screens workstations, as the amount and the nature of informations they need at any given time requires a lot of screen real estate. Two monitors plugged to a laptop is very common. OSRD has to be able to exist on multiple monitors.</p>
+						<p>When evaluating and planning evolutions for a railroad network, engineers need to display, compare and edit a lot of informations at once. They use as much screen real estate as possible, and very often have multiple screens workstations. Two monitors plugged to a laptop is a very common setup. OSRD has to be able to exist in multiple browser windows, as well as in a single one. The user needs an easy way to manage these windows and their content.</p>
+						<p>Studying a circulation hypothesis goes through different stages where only a subset of the tools provided by OSRD are needed. The user needs an easy way to manage these tools.</p>
 						<h4>Anatomy</h4>
-						<p>A board sits at the first elevation level.</p>
-						<ul>
-							<li>Header with a title and a board menu access button. When the board has tabs, they have a title and a tab menu access button.</li>
-							<li>Content space</li>
-							<li>Footer</li>
-							<li>Resize handles if there are adjacent boards above, below or on the sides.</li>
-						</ul>
+						<p>The solution to the multi window problem was to display content in containers named “boards”. A board contains a single type of content named “family”. This way, it is possible to temporarily hide an entire family of content from the different viewports using a toggle button available in the main browser window.</p>
+						<p>Boards sit at the first elevation level. Each one has a header, a content space and an optional footer.</p>
+						<p>The header shows the board title and a button to access the actions menu for the board itself, and for the content in some cases.</p>
+						<p>A board can also group multiple tabs that can be managed from the header. In this case, each tab displays a title and a button to access a dedicated actions menu.</p>
+						<p>When boards are adjacent and at least one of them can have its dimensions adjusted, resizing handles are displayed between them.</p>
 						<h4>Interactivity</h4>
+						<p>Board and tab titles and actions menu buttons react to cursor hover. Tabs are either focused or unfocused. Resizing handles react to cursor hover.</p>
 						<h4>User expression</h4>
-						<h4>Application feedback</h4>
+						<p>Boards can be folded to a compact view by a single click on their header, or from the board actions menu. Their content and footer are hidden. This is an intermediate solution to make room for other boards without hiding entire content families. They can be unfolded with a single click on the header, or by using the board actions menu.</p>
+						<p>Boards can be expanded to occupy the whole viewport with a single click on the header while pressing down the shift key, or by using the board actions menu. Expanded boards allow for a more confortable presentation of intricate data to engineers when they need more focus. Collapsing them to their previous folding state is done with a single click on their header, or from a button display bottom center of the viewport.</p>
+						<p>Boards can be sent to a new or existing secondary OSRD browser window from the actions menu.</p>
+						<p>Tabs can be folded just like regular boards by a single click on their title, if it is focused. A single click on an unfocused tab title will put it in focus. A tab can be removed from a tab group using the tab actions menu. They can be undocked from the board to a new adjacent board using the tab actions menu. They also can be moved from their board to another one, if these boards present the same content family.</p>
+
+						<p>Boards can have fixed dimensions, responsive dimensions, and/or user adjusted dimensions (using the resizing handles).</p>
 						<h4>Layout</h4>
+						<p>Boards can sit side by side and on top of each other, leaving some margin around them. These margins are responsive to the viewport’s dimensions.</p>
+						<p>Boards can be set to fill the viewport’s width. They also can have a fixed width, a minimum width, and a maximum width.</p>
+						<p>Boards can be set to fill the viewport’s height. In this case, when the content is taller, they contain a scrollview. They also can adjust their height to the content they display.</p>
 					</div>
 				</article>
 			</div>
