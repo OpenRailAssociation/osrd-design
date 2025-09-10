@@ -560,10 +560,10 @@ ___________|||______________________________|______________/
 						<small class="artboard"><a href="img/Structure/Elevations@2x.png" title="design document png export" target="_blank">View elevations artboard</a></small>
 						<h3>Boards</h3>
 						<h4>Intent</h4>
-						<p>When evaluating and planning evolutions for a railroad network, engineers need to display, compare and edit a lot of informations at once. They use as much screen real estate as possible, and very often have multiple screens workstations. Two monitors plugged to a laptop is a very common setup. OSRD has to be able to exist in multiple browser windows, as well as in a single one. The user needs an easy way to manage these windows and their content.</p>
-						<p>Studying a circulation hypothesis goes through different stages where only a subset of the tools provided by OSRD are needed. The user needs an easy way to manage these tools.</p>
+						<p>When evaluating and planning evolutions for a railroad network, engineers need to simultaneously display, compare and edit a lot of informations. They use as much screen real estate as possible, and very often have multiple screens workstations. Two monitors plugged to a laptop is a very common setup. OSRD has to be able to exist in multiple browser windows, as well as in a single one. The user needs an easy way to manage these windows and their content.</p>
+						<p>Studying a circulation hypothesis is a multistage process. OSRD provides tools and visualisations for each of them, but users don't always need them. An easy way to manage the display of these tools helps them optimising their available screen real estate.</p>
 						<h4>Anatomy</h4>
-						<p>The solution to the multi window problem was to display content in containers named “boards”. A board contains a single type of content named “family”. This way, it is possible to temporarily hide an entire family of content from the different viewports using a toggle button available in the main browser window.</p>
+						<p>The solution to the multi window problem was to display content in containers named “boards”. A board can only contain a single type of content named “family”. This way, it is possible to temporarily hide an entire family of content from the different viewports using a toggle button available in the main browser window.</p>
 						<p>Boards sit at the first elevation level. Each one has a header, a content space and an optional footer.</p>
 						<p>The header shows the board title and a button to access the actions menu for the board itself, and for the content in some cases.</p>
 						<p>A board can also group multiple tabs that can be managed from the header. In this case, each tab displays a title and a button to access a dedicated actions menu.</p>
@@ -576,8 +576,8 @@ ___________|||______________________________|______________/
 						<p>Boards can be sent to a new or existing secondary OSRD browser window from the actions menu.</p>
 						<p>Tabs can be folded just like regular boards by a single click on their title, if it is focused. A single click on an unfocused tab title will put it in focus. A tab can be removed from a tab group using the tab actions menu. They can be undocked from the board to a new adjacent board using the tab actions menu. They also can be moved from their board to another one, if these boards present the same content family.</p>
 
-						<p>Boards can have fixed dimensions, responsive dimensions, and/or user adjusted dimensions (using the resizing handles).</p>
 						<h4>Layout</h4>
+						<p>Boards can have fixed dimensions, responsive dimensions, and/or user adjusted dimensions (using the resizing handles).</p>
 						<p>Boards can sit side by side and on top of each other, leaving some margin around them. These margins are responsive to the viewport’s dimensions.</p>
 						<p>Boards can be set to fill the viewport’s width. They also can have a fixed width, a minimum width, and a maximum width.</p>
 						<p>Boards can be set to fill the viewport’s height. In this case, when the content is taller, they contain a scrollview. They also can adjust their height to the content they display.</p>
