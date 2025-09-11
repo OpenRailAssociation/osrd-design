@@ -564,6 +564,35 @@ ___________|||______________________________|______________/
 							<div class="elevation Up4"></div>
 						</div>
 						<small class="artboard"><a href="img/Structure/Elevations@2x.png" title="design document png export" target="_blank">View elevations artboard</a></small>
+						<h3>Dialog boxes</h3>
+						<h4>Intent</h4>
+						<p>Sometimes a workflow can branch in a situation where the user’s focus needs to be captured as much as possible, a task at hand requires as much screen estate as possible, and/or multiple interdependent decisions are required before applying them to the context.</p>
+						<p>Dialogs provide a temporary space coming with an interaction tonality shift, from which users exit after they made an explicit decision.</p>
+						<h4>Anatomy</h4>
+						<p>Dialogs are isolated from the context they were opened from with a semi-transparent overlay. This one has a gradient to reinforce the sense of depth in the application.</p>
+						<p>A horizontally centred container is where all content is laid out. Its strong drop shadow make it stand out even more from the overlay.</p>
+						<p>A title bar on top gives a succinct description of the goal to achieve in this dialog. For example: “Confirm project deletion”, “Re-order category items”, “Edit user profile”.</p>
+						<p>An action bar at the bottom is where buttons related to the task completion are found.</p>
+						<p>The content area is separated from the top and bottom bar using an ambient background and a single pixel inset drop shadow.</p>
+						<h4>Interactivity</h4>
+						<p>As mentioned above, a dialog should only be exited with a clear intent, using one of the buttons in the bottom action bar.</p>
+						<h4>Application feedback</h4>
+						<p>When applying modifications specified in the dialog to the context is was opened from, data transfer and computation can be nearly instantaneous. In this situation, closing the dialog should happen as soon as the user clicks the action button. When the application knows in advance that computation will be long, or that network conditions delay data transfer significantly, it should inform the user that a process is underway. A threshold of one second seems reasonable considering today’s expectations. There are two situations to consider:</p>
+						<ol>
+							<li>when the result of the dialog action does not alter the context, this process can happen in the background, and the user can be informed of its existence and completion by a global message component.</li>
+							<li>when the result affects what’s in the user’s context, the dialog should not be closed before the app is ready to display the updated data. The existence of the ongoing process should be presented to the user at the same place the last action occurred – replacing the “submit” button for example. At process completion, the dialog can then be closed.</li>
+						</ol>
+						<h4>Layout</h4>
+						<p>There can’t be more than one dialog window displayed at a time.</p>
+						<p>Never use scrolling inside a dialog. Instead, extend its height and leave a margin at the bottom equivalent to the top one.</p>
+						<div class="images">
+							<figure>
+							<img src="img/Structure/Dialog_example.png"/>
+							<figcaption>An example of a dialog box</figcaption>
+						</figure>
+						</div>
+						
+						<small class="artboard"><a href="img/Structure/Dialog@2x.png" title="design document png export" target="_blank">View dialog box artboard</a></small>
 						<!--
 						<h3>Boards</h3>
 						<h4>Intent</h4>

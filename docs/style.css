@@ -260,12 +260,24 @@ p {
 
 ul {
 	padding-inline-start: 1em;
-	list-style-type: circle;
+	list-style-type: "•  ";
+	}
+
+ol {
+	padding-inline-start: 1.25em;
 	}
 
 li {
 	margin-bottom: 1em;
 	}
+
+li::marker {
+	color: #999;}
+
+ol li::marker {
+	font-size: 0.777em;
+	font-weight: 800;
+}
 
 .swatches {
 	width: 30em;
@@ -353,6 +365,15 @@ li {
 	font-family: "IBM Plex sans";
 	font-size: 0.8888em; /* 16px @ 18px */
 	overflow: hidden;
+}
+
+article .text .images figure {
+	margin-left: 0;
+	width: 40em;
+}
+
+article .text .images img {
+	width: 40em;
 }
 
 .ambientA {
@@ -548,14 +569,6 @@ a.banner_close:hover::after {
 .error a.banner_close:link, .error a.banner_close:visited {
 	background: transparent url(img/icn/close-banner-error.svg) no-repeat left top;
 }
-
-.swatches {
-	
-	padding: 2em;
-	overflow: hidden;
-	background-color: #fff;
-	/* background-color: yellow; */
-	}
 
 #end {
 	font-size: 2em;
