@@ -591,34 +591,69 @@ ___________|||______________________________|______________/
 							<figcaption>An example of a dialog box</figcaption>
 						</figure>
 						</div>
-						
 						<small class="artboard"><a href="img/Structure/Dialog@2x.png" title="design document png export" target="_blank">View dialog box artboard</a></small>
-						<!--
 						<h3>Boards</h3>
 						<h4>Intent</h4>
-						<p>When evaluating and planning evolutions for a railroad network, engineers need to simultaneously display, compare and edit a lot of informations. They use as much screen real estate as possible, and very often have multiple screens workstations. Two monitors plugged to a laptop is a very common setup. OSRD has to be able to exist in multiple browser windows, as well as in a single one. The user needs an easy way to manage these windows and their content.</p>
-						<p>Studying a circulation hypothesis is a multistage process. OSRD provides tools and visualisations for each of them, but users don't always need them. An easy way to manage the display of these tools helps them optimising their available screen real estate.</p>
+						<p>When evaluating and planning evolutions for a railroad network, engineers need to compare and edit a lot of data points. They use as much screen real estate as possible, and very often have multiple screens workstations. Two monitors plugged to a laptop is a very common setup. This means OSRD has to be able to exist in multiple browser windows, as well as in a single one. The user needs an easy way to manage how the app content is displayed in one or multiple windows.</p>
+
+						<p>Additionally, studying a circulation hypothesis is a multistage process. OSRD provides tools and visualisations for each of them, but users don&#8217;t need all of them all the time. Being able to quickly show and display these tools helps them optimising their available screen real estate.</p>
+
+						<p>In summary, the need is to provide a way to show and hide parts of the app, as well as a solution to beam them to secondary windows, and back.</p>
 						<h4>Anatomy</h4>
-						<p>The solution to the multi window problem was to display content in containers named “boards”. A board can only contain a single type of content named “family”. This way, it is possible to temporarily hide an entire family of content from the different viewports using a toggle button available in the main browser window.</p>
-						<p>Boards sit at the first elevation level. Each one has a header, a content space and an optional footer.</p>
-						<p>The header shows the board title and a button to access the actions menu for the board itself, and for the content in some cases.</p>
+						<p>The solution was to:</p>
+						<ol>
+							<li>display content in containers named “boards”. A board contains a single type of content, or “family”;</li>
+							<li>make it possible to send a board in a secondary browser window, existing or new, as well as to bring a board back to the main browser window;</li>
+							<li>provide easily reachable toggle switches for each content family.</li>
+						</ol>
+						<div class="images screenshot">
+							<figure>
+							<img src="img/Structure/Board_example.png"/>
+							<figcaption>An example of screen built with 4 boards.</figcaption>
+						</figure>
+						</div>
+						<p>Boards sit at the first elevation level. Each one has a header, a content space and an optional footer. The footer should always be used when a board contains an item list with no margins.</p>
+						<p>The header shows the board title and a button to access the board actions menu, which can list actions for the content in some cases.</p>
 						<p>A board can also group multiple tabs that can be managed from the header. In this case, each tab displays a title and a button to access a dedicated actions menu.</p>
 						<p>When boards are adjacent and at least one of them can have its dimensions adjusted, resizing handles are displayed between them.</p>
+						<p>When toggle switches are present, they need to be always visible. For now, a sticky container placed on top provides this functionality.</p>
 						<h4>Interactivity</h4>
-						<p>Board and tab titles and actions menu buttons react to cursor hover. Tabs are either focused or unfocused. Resizing handles react to cursor hover.</p>
+						<p>Board and tab titles react to cursor hover and mouse clicks. Tabs are either focused – with their associated content displayed in the board – or unfocused.</p>
+						<div class="images screenshot">
+							<figure>
+							<img src="img/Structure/Board_actions_menu.png"/>
+							<figcaption>The board actions menu.</figcaption>
+						</figure>
+						<p>The actions menu button reacts to cursor hover, and displays the menu when it is clicked. Clicking it again, or clicking outside the menu, closes the actions menu.</p>						
+						<p>Resizing handles react to cursor hover, and get even more visual presence on mouse down, while they are dragged.</p>
 						<h4>User expression</h4>
-						<p>Boards can be folded to a compact view by a single click on their header, or from the board actions menu. Their content and footer are hidden. This is an intermediate solution to make room for other boards without hiding entire content families. They can be unfolded with a single click on the header, or by using the board actions menu.</p>
-						<p>Boards can be expanded to occupy the whole viewport with a single click on the header while pressing down the shift key, or by using the board actions menu. Expanded boards allow for a more confortable presentation of intricate data to engineers when they need more focus. Collapsing them to their previous folding state is done with a single click on their header, or from a button display bottom center of the viewport.</p>
+						<p>Boards can be folded to a compact state by a single click on their title, or from the board actions menu. Their content and footer are hidden. This is an intermediate solution to make room for other boards without hiding entire content families with the toggle switch. They can be unfolded with a single click on their title, or by using the board actions menu.</p>
+						<div class="images screenshot">
+							<figure>
+							<img src="img/Structure/Board_fold.png"/>
+							<figcaption>The first board has been folded.</figcaption>
+						</figure>
+						<p>Boards can be expanded to occupy the whole viewport with a single click on the header while pressing down the shift key, or by using the board actions menu. Expanded boards allow for a more confortable presentation of intricate data to users when they need more focus. Collapsing them to their previous folding state is done with a single click on their header, or from a button displayed at the bottom center of the viewport.</p>
+						<div class="images screenshot">
+							<figure>
+							<img src="img/Structure/Board_expand.png"/>
+							<figcaption>A board can expand to the whole viewport with a shift+click on its title.</figcaption>
+						</figure>
 						<p>Boards can be sent to a new or existing secondary OSRD browser window from the actions menu.</p>
+						<div class="images screenshot">
+							<figure>
+							<img src="img/Structure/Board_secondary_window.png"/>
+							<figcaption>A board can be exported to a secondary window, new or existing.</figcaption>
+						</figure>
 						<p>Tabs can be folded just like regular boards by a single click on their title, if it is focused. A single click on an unfocused tab title will put it in focus. A tab can be removed from a tab group using the tab actions menu. They can be undocked from the board to a new adjacent board using the tab actions menu. They also can be moved from their board to another one, if these boards present the same content family.</p>
-
 						<h4>Layout</h4>
 						<p>Boards can have fixed dimensions, responsive dimensions, and/or user adjusted dimensions (using the resizing handles).</p>
-						<p>Boards can sit side by side and on top of each other, leaving some margin around them. These margins are responsive to the viewport’s dimensions.</p>
+						<p>Boards can sit side by side and on top of each other, leaving some margin around them. These margins are responsive to the viewport’s dimensions.</p>						
 						<p>Boards can be set to fill the viewport’s width. They also can have a fixed width, a minimum width, and a maximum width.</p>
 						<p>Boards can be set to fill the viewport’s height. In this case, when the content is taller, they contain a scrollview. They also can adjust their height to the content they display.</p>
+						<p>When board families are hidden using toggle switches, the other boards auto resize to fill the newly available space.</p>
+						<small class="artboard"><a href="img/Structure/Boards@2x.png" title="design document png export" target="_blank">View boards artboard</a></small>
 					</div>
-					-->
 				</article>
 			</div>
 		</section>
