@@ -367,13 +367,13 @@ ol li::marker {
 	overflow: hidden;
 }
 
-article .text .images figure {
+article .text .screenshot figure {
 	margin-left: 0;
-	width: 40em;
+	width: 60em;
 }
 
-article .text .images img {
-	width: 40em;
+article .text .screenshot img {
+	width: 60em;
 }
 
 .ambientA {
