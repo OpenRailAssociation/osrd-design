@@ -135,6 +135,32 @@ nav li {
 	margin-bottom: 0.2222em;
 	}
 
+nav ul ul {
+	margin: 0.5em 0 1.687em 0.5em;
+	font-size: 0.888em;
+	}
+
+ul {
+	padding-inline-start: 1em;
+	list-style-type: "•  ";
+	}
+
+ol {
+	padding-inline-start: 1.25em;
+	}
+
+nav ul ul {
+	list-style-type: "–   ";
+}
+
+nav ul ul li {
+	margin-bottom: 0.375em;
+}
+
+nav ul ul li::marker {
+	color: #666;
+	}
+
 #toc_link_top {
 	position: sticky;
 	top: 90vh;
@@ -272,7 +298,8 @@ li {
 	}
 
 li::marker {
-	color: #999;}
+	color: #999;
+	}
 
 ol li::marker {
 	font-size: 0.777em;
