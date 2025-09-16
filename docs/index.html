@@ -20,9 +20,9 @@ ___________|||______________________________|______________/
 </head>
 
 <body>
-	<a href="#toc" id="toc_link_top">Table of Content</a>
+	<a href="#toc" id="toc_link_top">Table of Contents</a>
 	<header>
-		<h1>OSRD design process</h1>
+		<h1>OSRD design process</h1>
 		<p id="intro">The aim of this document is to explain the rationale leading to the <a href="https://osrd.fr" title="Find out more about OSRD" traget="_blank">OSRD</a> interface. From general considerations to Design System elements and specific OSRD features, it will list the choices made to build the OSRD graphical interface.</p>
 		<!--<small>The OSRD Design System documentation is <a href="https://osrd.fr/design-system">here</a>.</small>-->
 		<div id="toc"></div>
@@ -156,7 +156,7 @@ ___________|||______________________________|______________/
 						<h3>Vertical</h3>
 						<p>Just as with ruled paper, having text and elements evenly placed and dimensioned vertically provide visual harmony and eases eye parsing, reducing tiredness over time.</p>
 						<p>The 8px increment is widely used, as it can provide meaningful line heights for text, distinctive icon sizes, and comfortable interactive elements dimensions. It&#8217;s also very much rooted in computation, which makes it even more pleasant to settle on and set rhythm with.</p>
-						<div style="background-image: url(img/rhythm-vertical_8px.png); width: 34em; height: 12em; display: block;box-shadow: inset 0 0 16px rgba(0,0,0,0.15), inset 0 0 4px rgba(0,0,0,0.6);"></div>
+						<div id="vertical_rhythm">Illustration of the 8 pixels vertical rhythm.</div>
 					</div>
 				</article>
 			</div>
@@ -255,9 +255,9 @@ ___________|||______________________________|______________/
 							<div class="swatch_4_square" style="background: #FF6868; ">error30</div>
 							<div class="swatch_4_square" style="background: #FFEEED; ">error5</div>
 							<div class="swatch_4_square" style="background: #E8D900;">highlight50</div>
-							<div class="swatch_4_square" style="background: #E8D900;"></div>
+							<div class="swatch_4_square no_display_max440" style="background: #E8D900;"></div>
 							<div class="swatch_4_square" style="background: #FFF700;">highlight30</div>
-							<div class="swatch_4_square" style="background: #FFF700;"></div>
+							<div class="swatch_4_square no_display_max440" style="background: #FFF700;"></div>
 						</div>
 						<small class="artboard"><a href="img/Colours/Utilities@2x.png" title="design document png export" target="_blank">View utilities artboard</a></small>
 						<h4>Train categories</h4>
@@ -405,17 +405,19 @@ ___________|||______________________________|______________/
 						<h3>Typographic scale</h3>
 						<p>This is the set of text sizes that will have to be used to typeset the whole interface. It&#8217;s a tool for consistency and harmony. Font sizes will have to be either 10, 12, 14, 16, 18, 24, 32, 40, 48, 72, or 88.</p>
 						<p>These sizes were determined empirically so each of them is distinct enough from the previous or next one, ensuring they can be used together in a screen and still provide visual clues of information hierarchy. The similarity with the 8px vertical rhythm isn&#8217;t coincidental at all.</p>
-						<p style="font-family: 'IBM Plex Sans'; font-size: 10px; line-height: 40px; width: 850px;">This is 10px font size</p>
-						<p style="font-family: 'IBM Plex Sans'; font-size: 12px; line-height: 40px; width: 850px;">This is 12px font size</p>
-						<p style="font-family: 'IBM Plex Sans'; font-size: 14px; line-height: 40px; width: 850px;">This is 14px font size</p>
-						<p style="font-family: 'IBM Plex Sans'; font-size: 16px; line-height: 40px; width: 850px;">This is 16px font size</p>
-						<p style="font-family: 'IBM Plex Sans'; font-size: 18px; line-height: 40px; width: 850px;">This is 18px font size</p>
-						<p style="font-family: 'IBM Plex Sans'; font-size: 24px; line-height: 40px; width: 850px;">This is 24px font size</p>
-						<p style="font-family: 'IBM Plex Sans'; font-size: 32px; line-height: 40px; width: 850px;">This is 32px font size</p>
-						<p style="font-family: 'IBM Plex Sans'; font-size: 40px; line-height: 40px; width: 850px;">This is 40px font size</p>
-						<p style="font-family: 'IBM Plex Sans'; font-size: 48px; line-height: 40px; width: 850px;">This is 48px font size</p>
-						<p style="font-family: 'IBM Plex Sans'; font-size: 72px; line-height: 40px; width: 850px;">This is 72px font size</p>
-						<p style="font-family: 'IBM Plex Sans'; font-size: 88px; line-height: 40px; width: 850px;">This is 88px font size</p>
+						<div class="samples">
+							<p style="font-family: 'IBM Plex Sans'; font-size: 10px; line-height: 40px; width: 850px;">This is 10px font size</p>
+							<p style="font-family: 'IBM Plex Sans'; font-size: 12px; line-height: 40px; width: 850px;">This is 12px font size</p>
+							<p style="font-family: 'IBM Plex Sans'; font-size: 14px; line-height: 40px; width: 850px;">This is 14px font size</p>
+							<p style="font-family: 'IBM Plex Sans'; font-size: 16px; line-height: 40px; width: 850px;">This is 16px font size</p>
+							<p style="font-family: 'IBM Plex Sans'; font-size: 18px; line-height: 40px; width: 850px;">This is 18px font size</p>
+							<p style="font-family: 'IBM Plex Sans'; font-size: 24px; line-height: 40px; width: 850px;">This is 24px font size</p>
+							<p style="font-family: 'IBM Plex Sans'; font-size: 32px; line-height: 40px; width: 850px;">This is 32px font size</p>
+							<p style="font-family: 'IBM Plex Sans'; font-size: 40px; line-height: 40px; width: 850px;">This is 40px font size</p>
+							<p style="font-family: 'IBM Plex Sans'; font-size: 48px; line-height: 40px; width: 850px;">This is 48px font size</p>
+							<p style="font-family: 'IBM Plex Sans'; font-size: 72px; line-height: 40px; width: 850px;">This is 72px font size</p>
+							<p style="font-family: 'IBM Plex Sans'; font-size: 88px; line-height: 40px; width: 850px;">This is 88px font size</p>
+						</div>
 						<small class="artboard"><a href="img/Font/Typographic-scale@2x.png" title="design document png export" target="_blank">Typographic scale artboard</a></small>
 						<h3>Text styles</h3>
 						<p>Where the typographic scale and the colour palette meet. Text styles are pre-determined combinations of text size, weight and colour that will make the bulk of text elements in the app.</p>
@@ -423,10 +425,12 @@ ___________|||______________________________|______________/
 						<p>Weights are either semibold or regular. This doesn&#8217;t forbid the use of other weights occasionally when it makes sense for the context.</p>
 						<p>Colours are black and white, a range of four greys, and the 60 variant of the utility tints.</p>
 						<p>Here are some examples:</p>
-						<p style="font-family: 'IBM Plex Sans'; font-size: 14px; line-height: 24px; color:#AB5E00;">This is the "small" text style in warning60.</p>
-						<p style="font-family: 'IBM Plex Sans'; font-size: 18px; line-height: 24px; color:#797671;">This is the "large" text style in grey50.</p>
-						<p style="font-family: 'IBM Plex Sans'; font-size: 24px; font-weight: 600; line-height: 24px; color:#312E2B; width: 850px;">This is the "leading strong" text style in grey80.</p>
-						<p style="font-family: 'IBM Plex Sans'; font-size: 32px; font-weight: 600; letter-spacing: -0.6px; line-height: 24px; color: #B6B3AF; width: 850px;">This is the heading 2 text style in grey30.</p>
+						<div class="samples">
+							<p style="font-family: 'IBM Plex Sans'; font-size: 14px; line-height: 24px; color:#AB5E00;">This is the "small" text style in warning60.</p>
+							<p style="font-family: 'IBM Plex Sans'; font-size: 18px; line-height: 24px; color:#797671;">This is the "large" text style in grey50.</p>
+							<p style="font-family: 'IBM Plex Sans'; font-size: 24px; font-weight: 600; line-height: 24px; color:#312E2B; width: 600px;">This is the "leading strong" text style in grey80.</p>
+							<p style="font-family: 'IBM Plex Sans'; font-size: 32px; font-weight: 600; letter-spacing: -0.6px; line-height: 24px; color: #B6B3AF; width: 600px;">This is the heading 2 text style in grey30.</p>
+						</div>
 						<small class="artboard"><a href="img/Font/Headings@2x.png" title="design document png export" target="_blank">Headings text styles artboard</a></small>
 						<small class="artboard"><a href="img/Font/Paragraphs@2x.png" title="design document png export" target="_blank">Paragraph text styles artboard</a></small>
 						<small class="artboard"><a href="img/Font/Links@2x.png" title="design document png export" target="_blank">Links text styles artboard</a></small>
